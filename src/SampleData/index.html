@@ -1,0 +1,129 @@
+﻿<!-- ---------------------------------------------------------------------
+// <copyright file="index.html">
+//    This code is licensed under the MIT License.
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+//    PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// </copyright>
+// <summary>
+// </summary>
+//---------------------------------------------------------------------
+-->
+   
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Sample Data Widget</title>
+    <link href="css/app.css" rel="stylesheet" />
+    <script src="scripts/SDK/VSS.SDK.min.js"></script>
+    <script src="scripts/SDK/q.js"></script>
+    <script src="scripts/Infrastructure.js"></script>
+    <script src="scripts/SDK/ai.0.22.9-build00167.min.js"></script>
+    <script src="scripts/TelemetryClient.js"></script>
+</head>
+<body>
+
+    <script type="text/javascript">
+        // Initialize the VSS sdk
+        VSS.init({
+            explicitNotifyLoaded: true,
+            usePlatformScripts: true,
+            usePlatformStyles: true,
+            setupModuleLoader: true,
+            moduleLoaderConfig: {
+                paths: {
+                    "scripts": "scripts"
+                }
+            }
+        });
+
+        VSS.ready(function () {
+            VSS.require(["TFS/Dashboards/WidgetHelpers",
+                "TFS/WorkItemTracking/RestClient",
+            "scripts/SampleDataView",
+            "scripts/SampleDataController"], function (WidgetHelpers, Rest, SampleDataView, SampleDataController) {
+
+                var view = null;
+                var ctrl = null;
+                    VSS.register("sample-data-widget", function () {
+                        return {
+                            load: function (widgetSettings) {
+
+
+                                view = new SampleDataView.SampleDataView();
+                                ctrl = new SampleDataController.SampleDataController();
+
+                                var notifyer = SampleDataController.getInstance();
+                                notifyer.notifyCallback = view.Notify;
+
+                                view.InitView(ctrl);
+
+                                return WidgetHelpers.WidgetStatusHelper.Success();
+                            },
+                            reload: function (widgetSettings) {
+                                console.log("Reload");
+                                view.LoadTemplates();
+                                return WidgetHelpers.WidgetStatusHelper.Success();
+                            }
+                        }
+                    });
+                    VSS.notifyLoadSucceeded();
+                });
+        });
+
+    </script>
+    <div class="widget-container">
+        <div id="ExtTitle" class="title-container" style="margin-bottom:10px;">Sample Data</div>
+     
+        <div id="InitialLoad" >
+            <div id="loadingInstalledTemplates">Loading sample data packages...</div>
+<ul>
+    <li>Loading installed packages...</li>
+    <li>Loading custom packages...</li>
+</ul>
+        
+        </div>
+        <div id="PopulatedTemplate" style="display:none;">
+            <figure class="TemplateImage">
+                <img id="TemplateIcon" src="" />
+                <figcaption id="TemplateNavigator">
+                    <a href"" id="MovePrev">&lt;</a>
+                    <div id="TemplateIndex" style="display:inline-block"></div>
+                    <a href"" id="MoveNext">&gt;</a>
+                </figcaption>
+            </figure>
+
+            <span id="TemplateName">{Name}</span><br />
+            <span id="TemplateMessage">{Message}</span><br />
+
+            <a href="" id="TryItLink" target="_blank" >Try it</a>
+            <span id="TemplateError">The data creation did not finish</span>
+            <br />
+
+            <input id="Delete" type="button" title="Delete sample data" value="Delete" class="SampleActionButton" />
+            <a href"" id="ShowCreate" class="NavLink">Add more sample data</a>
+
+        </div>
+        <div id="CreateFromTemplate" style="display:none;">
+            <div class="SubTitle" >Create sample data for your project</div>
+            <div id="TemplateDropDown" class="dropdown"></div>
+            <br />
+            <a href"" id="ShowPopulatedTemplates" class="NavLink">Explore created data</a>
+            <input id="Create" type="button" title="Create sample data" value="Create" class="SampleActionButton" />
+        </div>
+        <div id="Progress" style="display:none">
+            <div id="ProgressTitleCreate" class="SubTitle">Please wait while we add data to your project. This is going to be awesome.</div>
+            <div id="ProgressTitleDelete" class="SubTitle">Please wait while we delete the sample data.</div>
+            <div id="ErrorMsg" style="display:none">
+                <span>Ooops!<br /> Something went wrong. Please try again</span>
+                <input id="DeleteFailed" type="button" title="OK I got it" value="OK" class="SampleActionButton" />
+            </div>
+            <div id="ProgressBar" class="ProgessBar"></div>
+            <div id="ProgressMessage"></div>
+        </div>
+    </div>
+</body>
+</html>

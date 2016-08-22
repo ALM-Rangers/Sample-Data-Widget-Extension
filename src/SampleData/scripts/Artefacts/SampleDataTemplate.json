@@ -1,0 +1,235 @@
+﻿{
+  [
+    {
+      "Name": "StarWars",
+      "Description": "Willys StarWars theme",
+      "DataServices": [
+        {
+          "Service": "WorkItemSampleDataService",
+          "TemplateData": {
+            "templatedWorkItems": [
+
+              {
+                "templateWorkItemId": "#1",
+                "Type": "Epic",
+                "LinkType": "",
+                "CreateExpr": "",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Rebel"
+                  }
+                ]
+              },
+              {
+                "templateWorkItemId": "#11",
+                "Type": "Feature",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Millennium Falcon"
+                  }
+                ],
+                "Parent": "#1"
+              },
+              {
+                "templateWorkItemId": "#21",
+                "Type": "Feature",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Rebel blockade runner"
+                  }
+                ],
+                "Parent": "#1"
+              },
+              {
+                "templateWorkItemId": "#31",
+                "Type": "Feature",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "X-Wing Starfighter"
+                  }
+                ],
+
+                "Parent": "#1"
+              },
+              {
+                "templateWorkItemId": "#41",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Fuselage"
+                  }
+                ],
+
+                "Parent": "#31"
+              },
+              {
+                "templateWorkItemId": "#51",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Folding wings"
+
+                  }
+                ],
+
+                "Parent": "#31"
+              },
+              {
+                "templateWorkItemId": "#61",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Stealth"
+                  }
+                ],
+
+                "Parent": "#31"
+              },
+              {
+                "templateWorkItemId": "#71",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Cockpit"
+                  }
+                ],
+                "Parent": "#31"
+              },
+              {
+                "templateWorkItemId": "#81",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Ejection Seat"
+                  }
+                ],
+
+                "Parent": "#31"
+              },
+              {
+                "templateWorkItemId": "#91",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Weapon System"
+                  }
+                ],
+
+                "Parent": "#31"
+              },
+              {
+                "templateWorkItemId": "#101",
+                "Type": "Epic",
+                "LinkType": "",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Empire"
+                  }
+                ]
+              },
+              {
+                "templateWorkItemId": "#111",
+                "Type": "Feature",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Death Star"
+                  }
+                ],
+
+                "Parent": "#101"
+              },
+              {
+                "templateWorkItemId": "#121",
+                "Type": "Feature",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Sith Infiltrator"
+                  }
+                ],
+
+                "Parent": "#101"
+              },
+              {
+                "templateWorkItemId": "#131",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Wings"
+
+                  }
+                ],
+
+                "Parent": "#121"
+              },
+              {
+                "templateWorkItemId": "#141",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Engine"
+
+                  }
+                ],
+
+                "Parent": "#121"
+              },
+              {
+                "templateWorkItemId": "#151",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Laser"
+
+                  }
+                ],
+
+                "Parent": "#121"
+              },
+              {
+                "templateWorkItemId": "#161",
+                "Type": "Product Backlog Item",
+                "LinkType": "System.LinkTypes.Hierarchy-Reverse",
+                "Fields": [
+                  {
+                    "Field": "System.Title",
+                    "Value": "Framework"
+                  }
+                ],
+                "Parent": "#121"
+              }
+          }
+        }
+      ]
+    }
+   ]
+}

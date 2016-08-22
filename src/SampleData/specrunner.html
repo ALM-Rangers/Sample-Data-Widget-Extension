@@ -1,0 +1,41 @@
+<!-- ---------------------------------------------------------------------
+// <copyright file="specrunner.html">
+//    This code is licensed under the MIT License.
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+//    PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// </copyright>
+// <summary>
+// </summary>
+//---------------------------------------------------------------------
+-->
+<!doctype html>
+<html>
+<head>
+    <title>Jasmine Test Runner</title>
+    <link href="test/libs/jasmine/jasmine.css" rel="stylesheet" />
+    <script src="test/libs/jasmine/jasmine.js"></script>
+    <script src="test/libs/jasmine/jasmine-html.js"></script>
+    <script src="test/libs/jquery.min.js"></script>
+    <script src="scripts/SDK/VSS.SDK.js"></script>
+    <script src="scripts/Infrastructure.js"></script>
+    <script src="scripts/SDK/q.js"></script>
+
+    <script src="test/libs/jasmine/boot.js"></script>
+    <!--<script>
+        var jasmineEnv = jasmine.getEnv();
+        jasmineEnv.updateInterval = 1000;
+
+        var htmlReporter = new jasmine.HtmlReporter();
+
+        jasmineEnv.addReporter(htmlReporter);
+        jasmineEnv.specFilter = function (spec) {
+            return htmlReporter.specFilter(spec);
+        };
+    </script>-->
+    <script data-main="test/specrunner" type="text/javascript" src="test/libs/require.js"></script>
+</head>
+<body>
+</body>
+</html>

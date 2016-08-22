@@ -1,0 +1,2646 @@
+﻿
+  {
+    "Name": "SAFe with VSTS",
+    "Description": "Getting started with SAFe in VSTS",
+    "IconUrl": "/img/Safe.png",
+    "Message": "<a href='https://www.visualstudio.com/en-us/docs/work/scale/scaled-agile-framework' target='_blank'>Read how VSTS suppports SAFe</a>",
+    "TryItLink": "_backlogs?level=Epics&_a=backlog",
+    "TryItLinkText":  "Try out the sample data",
+   "Parameters": [
+      {
+        "Field": "@TaskInProgressState",
+        "Value": "='@RequirementType'=='Product backlog item' ? 'In Progress':'Active'"
+      }
+    ],
+
+    "DataServices": [
+      {
+        "Service": "AreaSampleDataService",
+        "Name": "Areas",
+        "TemplateData": {
+          "nodes": [
+       
+            {
+              "Path": "",
+              "Name": "Fiber Suite",
+              "Children": 
+                [
+                  {
+                    "Path": "Fiber Suite",
+                    "Name": "App"
+                  },
+                  {
+                    "Path": "Fiber Suite",
+                    "Name": "Migrate"
+                  },
+                  {
+                    "Path": "Fiber Suite",
+                    "Name": "Report"
+                  },
+                   {
+                    "Path": "Fiber Suite",
+                    "Name": "System"
+                  }
+                ]
+              
+            },
+            {
+              "Path": "",
+              "Name": "Service Suite",
+              "Children": [
+                {
+                  "Path": "Service Suite",
+                  "Name": "Performance"
+                },
+                {
+                  "Path": "Service Suite",
+                  "Name": "Web App"
+                },
+                {
+                  "Path": "Service Suite",
+                  "Name": "Web Service"
+                }
+              ]
+              
+            }
+          ]
+        }
+      },
+      {
+        "Service": "IterationSampleDataService",
+        "Name": "Iterations",
+        "DependentOn": "AreaSampleDataService",
+        "TemplateData": {
+          "nodes": [
+            {
+              "Path": "",
+              "Name": "PI 1",
+              "Children": [
+                {
+                  "Path": "PI 1",
+                  "Name": "Sprint 1"
+                },
+                {
+                  "Path": "PI 1",
+                  "Name": "Sprint 2"
+                },
+                {
+                  "Path": "PI 1",
+                  "Name": "Sprint 3"
+                },
+                {
+                  "Path": "PI 1",
+                  "Name": "Sprint 4"
+                }
+              ]
+            },
+            {
+              "Path": "",
+              "Name": "PI 2"
+            },
+            {
+              "Path": "",
+              "Name": "PI 3"
+            }
+          ]
+        }
+      },
+      
+      {
+        "Service": "TeamSampleDataService",
+        "DependentOn": "IterationSampleDataService",
+        "Name": "Teams",
+        "TemplateData": {
+          "teams": [
+
+            {
+              "Name": "@CurrentTeam",
+              "BugsBehavior": "asRequirements",
+              "BacklogVisibility": {
+                "Microsoft.EpicCategory": true,
+                "Microsoft.FeatureCategory": true,
+                "Microsoft.RequirementCategory": true
+              }
+            },
+            {
+              "Name": "Fiber Suite",
+              "Description": "Example team 1",
+              "DefaultTeamValue": "Fiber Suite",
+              "TeamValues": [
+                {
+                  "includeChildren": false,
+                  "value": "Fiber Suite"
+                }
+              ],
+              "Iterations": {
+                "RootIteration": "\\",
+                "Iterations": [ "PI 1", "PI 2", "PI 3" ]
+              }
+            },
+            {
+              "Name": "Fiber Suite App",
+              "Description": "Example team 2",
+              "DefaultTeamValue": "Fiber Suite\\App",
+              "TeamValues": [
+                {
+                  "includeChildren": true,
+                  "value": "Fiber Suite\\App"
+                }
+              ],
+              "Iterations": {
+                "RootIteration": "\\",
+                "Iterations": [ "PI 1\\Sprint 1", "PI 1\\Sprint 2", "PI 1\\Sprint 3", "PI 1\\Sprint 4" ]
+              }
+            },
+            {
+              "Name": "Fiber Suite Migrate",
+              "Description": "Example team 2",
+              "DefaultTeamValue": "Fiber Suite\\Migrate",
+              "TeamValues": [
+                {
+                  "includeChildren": true,
+                  "value": "Fiber Suite\\Migrate"
+                }
+              ],
+              "Iterations": {
+                "RootIteration": "\\",
+                "Iterations": [ "PI 1\\Sprint 1", "PI 1\\Sprint 2", "PI 1\\Sprint 3", "PI 1\\Sprint 4" ]
+              }
+            },
+            {
+              "Name": "Fiber Suite Report",
+              "Description": "Example team 2",
+              "DefaultTeamValue": "Fiber Suite\\Report",
+              "TeamValues": [
+                {
+                  "includeChildren": true,
+                  "value": "Fiber Suite\\Report"
+                }
+              ],
+              "Iterations": {
+                "RootIteration": "\\",
+                "Iterations": [ "PI 1\\Sprint 1", "PI 1\\Sprint 2", "PI 1\\Sprint 3", "PI 1\\Sprint 4" ]
+              }
+            },
+            {
+              "Name": "Fiber Suite System",
+              "Description": "Example team 2",
+              "DefaultTeamValue": "Fiber Suite\\System",
+              "TeamValues": [
+                {
+                  "includeChildren": true,
+                  "value": "Fiber Suite\\System"
+                }
+              ],
+              "Iterations": {
+                "RootIteration": "\\",
+                "Iterations": [ "PI 1\\Sprint 1", "PI 1\\Sprint 2", "PI 1\\Sprint 3", "PI 1\\Sprint 4" ]
+              }
+            },
+                         {
+              "Name": "Service Suite",
+              "Description": "Example team 1",
+              "DefaultTeamValue": "Service Suite",
+              "TeamValues": [
+                {
+                  "includeChildren": false,
+                  "value": "Service Suite"
+                }
+              ],
+              "Iterations": {
+                "RootIteration": "\\",
+                "Iterations": [ "PI 1", "PI 2", "PI 3" ]
+              }
+            },
+    {
+              "Name": "Service Suite App",
+              "Description": "Example team 2",
+              "DefaultTeamValue": "Service Suite\\Web App",
+              "TeamValues": [
+                {
+                  "includeChildren": true,
+                  "value": "Service Suite\\Web App"
+                }
+              ],
+              "Iterations": {
+                "RootIteration": "\\",
+                "Iterations": [ "PI 1\\Sprint 1", "PI 1\\Sprint 2", "PI 1\\Sprint 3", "PI 1\\Sprint 4" ]
+              }
+            },
+            {
+              "Name": "Service Suite Performance",
+              "Description": "Example team 2",
+              "DefaultTeamValue": "Service Suite\\Performance",
+              "TeamValues": [
+                {
+                  "includeChildren": true,
+                  "value": "Service Suite\\Performance"
+                }
+              ],
+              "Iterations": {
+                "RootIteration": "\\",
+                "Iterations": [ "PI 1\\Sprint 1", "PI 1\\Sprint 2", "PI 1\\Sprint 3", "PI 1\\Sprint 4" ]
+              }
+            },
+            {
+              "Name": "Service Suite Web Service",
+              "Description": "Example team 2",
+              "DefaultTeamValue": "Service Suite\\Web Service",
+              "TeamValues": [
+                {
+                  "includeChildren": true,
+                  "value": "Service Suite\\Web Service"
+                }
+              ],
+              "Iterations": {
+                "RootIteration": "\\",
+                "Iterations": [ "PI 1\\Sprint 1", "PI 1\\Sprint 2", "PI 1\\Sprint 3", "PI 1\\Sprint 4" ]
+              }
+            }
+          ]
+        }
+      },
+
+      {
+        "Service": "WorkItemSampleDataService",
+        "Name": "Work items",
+        "DependentOn": "IterationSampleDataService",
+        "TemplateData": {
+          "templatedWorkItems": [
+            {
+              "templateWorkItemId": "289",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Secure personalization"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "290",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Share user personalization across devices"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "291",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As a user, I can select whether to keep my personalization local or roaming, so that I can share the personalization across all devices"
+                }
+              ],
+              "Parent": "290",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "292",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As a user, I can select whether to keep my state local or roaming, so that I can share my state across all devices"
+                }
+              ],
+              "Parent": "290",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "293",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Implement a service that receives and stores user feedback"
+                }
+              ],
+              "Parent": "290",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "295",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Performance boost in low-bandwidth modems"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "297",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Slow response on information form"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "299",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add animated emoticons"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "301",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Design welcome screen"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "302",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Change background color"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "305",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Improve User Experience"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "306",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Integrate client application with popular email clients"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "305",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "307",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Implement a factory which abstracts the email client"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "306",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "308",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Support selection of support cases and email them"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "306",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "309",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Integrate client app with IM clients"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "305",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "310",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Emoticon feedback enabled in client application"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "305",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "311",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As a user, I can select an emoticon and add a short description"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "310",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "312",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Framework to port applications to all devices"
+                },
+                 {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "313",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Migrate legacy code to portable frameworks"
+                },
+                 {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "312",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "314",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As a developer, I can analyze a code base to determine compliance with portable framework"
+                },
+                 {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "313",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "315",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Simplify analysis tool"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "314",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "316",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add auto-analysis checkbox to checkin sequence"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "314",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "317",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Deploy premium service for code analysis"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "314",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "318",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add test suite for automation"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "314",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "319",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Implement a framework that migrates legacy to portable frameworks"
+                },
+                 {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "313",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "320",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Develop framework architecture"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ],
+              "Parent": "319",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "321",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Shared Personalization and State"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "universal applications"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "322",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Service interfaces to support Rest API"
+                },
+                {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "323",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Service Suite"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Convert legacy OData service interfaces to Rest API"
+                },
+                {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "322",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "324",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Service Suite\\Web Service"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Convert all services from using experimental OData to the supported REST API"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "323",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "325",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Service Suite\\Web Service"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Convert all client service calls from using experimental OData to the supported REST API"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "323",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "326",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Counter the Heartbleed web security bug"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "security"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "327",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Update software to resolve the OpenSLL cryptographic software library vulnerability"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "security"
+                }
+              ],
+              "Parent": "326",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "328",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Update and re-test suite code base affected by the vulnerability."
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "security"
+                }
+              ],
+              "Parent": "327",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "329",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Update and re-test service code base affected by the vulnerability."
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "security"
+                }
+              ],
+              "Parent": "327",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "330",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Scan all software for the OpenSLL cryptographic software library vulnerability"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "security"
+                }
+              ],
+              "Parent": "326",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "331",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\System"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Scan all code base and identify the affected code in service apps."
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "security"
+                }
+              ],
+              "Parent": "330",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "332",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\System"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Scan all code base and identify the affected code in suite apps."
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "security"
+                }
+              ],
+              "Parent": "330",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "333",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Convert legacy OData service interfaces"
+                },
+                 {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "334",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Windows update release"
+                },
+                {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "servicing"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "335",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Migrate legacy code to portable frameworks"
+                },
+                {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "336",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Update code on lion module"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "337",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Lorem data compression algorithm"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "338",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Refactor compression code"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "339",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Create model report"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "340",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Test run for report stability"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "341",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Fix performance issues"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "342",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "World-class customer support"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "support"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "343",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Mitigate impact of low-coverage areas"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "support"
+                }
+              ],
+              "Parent": "342",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "344",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Use customer data in targeting service expansions"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "support"
+                }
+              ],
+              "Parent": "342",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "345",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As a user, I can select a user friendly report of selected feedback, so that we can share with stakeholders"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "support"
+                }
+              ],
+              "Parent": "344",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "346",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\App"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Self-report coverage dead zones"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "support"
+                }
+              ],
+              "Parent": "344",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "348",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Change background color"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "349",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Change page layout"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "350",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Develop about page"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "352",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add welcome back text"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "353",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Display user's name in header"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "355",
+              "CreateExpr": "",
+              "Type": "Issue",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "Issue"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Phone sign in"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "356",
+              "CreateExpr": "",
+              "Type": "Issue",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "Issue"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Research architecture changes"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "357",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Collect requirements"
+                }
+              ],
+              "Parent": "356",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "358",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Standardize on form factors"
+                }
+              ],
+              "Parent": "356",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "359",
+              "CreateExpr": "",
+              "Type": "Issue",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "Issue"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Switch context issues"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "360",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Service Suite"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Support customer mobility in all services"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "mobile applications"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "361",
+              "CreateExpr": "",
+              "Type": "@EpicType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\System"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@EpicType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Deploy high performance updates across all applications"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "performance"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "362",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Secure personalization"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "363",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Share user personalization across devices"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "364",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Simplify analysis tool"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "369",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "365",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add auto-analysis checkbox to checkin sequence"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "369",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "366",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Deploy premium service for code analysis"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "369",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "367",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add test suite for automation"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "369",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "368",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite\\Migrate"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1\\Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Develop framework architecture"
+                },
+                 {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "370",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "369",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As a developer, I can analyze a code base to determine compliance with portable framework"
+                },
+                 {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "335",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "370",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.AreaPath",
+                  "Value": "Fiber Suite"
+                },
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "PI 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Reason",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Implement a framework that migrates legacy to portable frameworks"
+                },
+                 {
+                  "Field": "Microsoft.VSTS.Common.ValueArea",
+                  "Value": "Architectural"
+                },
+                {
+                  "Field": "System.Tags",
+                  "Value": "integrate with 3rd-party devs"
+                }
+              ],
+              "Parent": "335",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            }
+          ]
+
+        }
+      },
+      {
+        "Service": "BoardSettingSampleDataService",
+        "Name": "Board settings",
+        "DependentOn": "TeamSampleDataService",
+        "TemplateData": {
+          "TeamName": "@CurrentTeam",
+          "BoardName": "Epics",
+          "CardSettings": {
+            "cards": {"Epic": [
+                { "fieldIdentifier": "System.Title" },
+                {
+                  "fieldIdentifier": "System.Id",
+                  "displayType": "CORE"
+                },
+                {
+                  "fieldIdentifier": "System.AssignedTo",
+                  "displayType": "CORE",
+                  "displayFormat": "AvatarAndFullName"
+                },
+                {
+                  "fieldIdentifier": "Microsoft.VSTS.Common.ValueArea",
+                  "displayType": "CORE"
+                },
+                {
+                  "fieldIdentifier": "System.Tags",
+                  "displayType": "CORE"
+                },
+                { "showEmptyFields": "false" }
+              ]
+   
+            }
+          },
+          "CardRules": {
+            "rules": {
+              "fill": [
+
+                {
+                  "filter": " [System.Title] = 'Customize cards'",
+                  "name": "Customize cards",
+                  "isEnabled": "true",
+                  "settings": {
+                    "background-color": "#CCABDE",
+                    "title-color": "#602F70"
+                  }
+                },
+                {
+                  "filter": " [System.State] = '@KanbanState_2'",
+                  "name": "In Progress",
+                  "isEnabled": "true",
+                  "settings": {
+                    "background-color": "#DCEEC6",
+                    "title-color": "#000000"
+                  }
+                },
+                {
+                  "filter": " [System.State] = '@KanbanStateDone'",
+                  "name": "Completed Work",
+                  "isEnabled": "true",
+                  "settings": {
+                    "background-color": "#E7E7E7",
+                    "title-color": "#000000"
+                  }
+                }
+              ],
+
+              "tagStyle": [
+                {
+                  "filter": null,
+                  "name": "For your information",
+                  "isEnabled": "true",
+                  "settings": {
+                    "background-color": "#2CBDD9",
+                    "color": "#000000"
+                  }
+                },
+                {
+                  "filter": null,
+                  "name": "Needs review",
+                  "isEnabled": "true",
+                  "settings": {
+                    "background-color": "#FBBC3D",
+                    "color": "#000000"
+                  }
+                },
+                {
+                  "filter": null,
+                  "name": "Follow up",
+                  "isEnabled": "true",
+                  "settings": {
+                    "background-color": "#FBFD52",
+                    "color": "#000000"
+                  }
+                }
+              ]
+            }
+          },
+          "Columns": [{
+            "name": "Funnel",
+            "itemLimit": "0",
+            "stateMappings": { "Epic": "New" },
+            "description": "",
+            "columnType": 0
+          },
+          {
+            "name": "Review",
+            "itemLimit": "5",
+            "stateMappings": { "Epic": "Active" },
+            "isSplit": false,
+            "description": "",
+            "columnType": 1
+          },
+          {
+            "name": "Analysis",
+            "itemLimit": "5",
+            "stateMappings": { "Epic": "Active" },
+            "isSplit": false,
+            "description": "",
+            "columnType": 1
+          },
+          {
+            "name": "Portfolio Backlog",
+            "itemLimit": "5",
+            "stateMappings": { "Epic": "Resolved" },
+            "isSplit": false,
+            "description": "",
+            "columnType": 1
+          },
+          {
+            "name": "Implementation",
+            "itemLimit": "5",
+            "stateMappings": { "Epic": "Resolved" },
+            "isSplit": false,
+            "description": "",
+            "columnType": 1
+          },
+          {
+            "name": "Done",
+            "itemLimit": "0",
+            "stateMappings": { "Epic": "Closed" },
+            "description": "",
+            "columnType": 2
+          }
+          ]
+
+        }
+      }
+    ]
+  }

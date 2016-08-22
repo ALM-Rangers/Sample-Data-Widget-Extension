@@ -1,0 +1,18 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "sdk",
+  "bundle": "sdk/tsd.d.ts",
+  "installed": {
+    "q/Q.d.ts": {
+      "commit": "8cd79728efa7652d934b2703feeb68bb4802aebb"
+    },
+    "knockout/knockout.d.ts": {
+      "commit": "8cd79728efa7652d934b2703feeb68bb4802aebb"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "8cd79728efa7652d934b2703feeb68bb4802aebb"
+    }
+  }
+}

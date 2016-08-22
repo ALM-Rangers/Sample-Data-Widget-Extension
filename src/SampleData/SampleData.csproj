@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{62F66EBF-4D97-4DF3-AE88-255A0A24CD8C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="configuration.html" />
+    <Content Include="css\app.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultTemplates\SAFe-instructions.html" />
+    <Content Include="gruntfile.js" />
+    <Content Include="img\CustomTemplate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\Kanban.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\LearningAgile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\previewLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\progress.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\safe-concepts-poster.png" />
+    <Content Include="img\Safe.png" />
+    <Content Include="img\SampleDataWidget.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\Teams.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\WICreation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\WIs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="scripts\SDK\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\SDK\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\SDK\q.js" />
+    <Content Include="scripts\SDK\VSS.SDK.js" />
+    <Content Include="scripts\SDK\VSS.SDK.min.js" />
+    <Content Include="test\libs\jasmine\boot.js" />
+    <Content Include="test\libs\jasmine\console.js" />
+    <Content Include="test\libs\jasmine\jasmine-html.js" />
+    <Content Include="test\libs\jasmine\jasmine.css" />
+    <Content Include="test\libs\jasmine\jasmine.js" />
+    <Content Include="test\libs\jasmine\jasmine_favicon.png" />
+    <Content Include="test\libs\jquery.min.js" />
+    <Content Include="test\libs\r.js" />
+    <Content Include="test\libs\require.js" />
+    <Content Include="specrunner.html" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vss-extension.json" />
+    <Content Include="tsd.json" />
+    <Content Include="package.json" />
+    <Content Include="test\libs\jasmine\MIT.LICENSE" />
+    <Content Include="scripts\Artefacts\areas-and-iterations.json" />
+    <Content Include="test\Artefacts\json.json" />
+    <Content Include="scripts\Artefacts\SampleDataTemplate.json" />
+    <Content Include="chutzpah.json" />
+    <Content Include="DefaultTemplates\custom.json" />
+    <Content Include="DefaultTemplates\PartsUnlimited.json" />
+    <Content Include="DefaultTemplates\SampleDataTemplate.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="test\DefaultTemplates\SampleDataTemplate.json" />
+    <Content Include="Overview.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mp_terms.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="GettingStartedWithAgile.md" />
+	<Content Include="SAFe.md" />
+    <Content Include="DefaultTemplates\SAFe.json" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="sdk\ai.0.22.9-build00167.d.ts" />
+    <TypeScriptCompile Include="scripts\app.ts" />
+    <TypeScriptCompile Include="scripts\AreaSampleDataService.ts" />
+    <TypeScriptCompile Include="scripts\BoardSettingsSampleDataService.ts" />
+    <TypeScriptCompile Include="scripts\ClassificationNode.ts" />
+    <TypeScriptCompile Include="scripts\ConfigView.ts" />
+    <TypeScriptCompile Include="scripts\ParamUtils.ts" />
+    <TypeScriptCompile Include="scripts\ProgressBar.ts" />
+    <TypeScriptCompile Include="scripts\TeamCapacitySampleDataService.ts" />
+    <TypeScriptCompile Include="scripts\TeamSampleDataService.ts" />
+    <TypeScriptCompile Include="scripts\SampleDataContract.ts" />
+    <TypeScriptCompile Include="scripts\Infrastructure.ts" />
+    <TypeScriptCompile Include="scripts\IterationSampleDataService.ts" />
+    <TypeScriptCompile Include="scripts\SampleDataController.ts" />
+    <TypeScriptCompile Include="scripts\SampleDataView.ts" />
+    <TypeScriptCompile Include="scripts\ServiceFactory.ts" />
+    <TypeScriptCompile Include="scripts\TelemetryClient.ts" />
+    <TypeScriptCompile Include="scripts\TemplateServices.ts" />
+    <TypeScriptCompile Include="scripts\WorkItemEngine.ts" />
+    <TypeScriptCompile Include="scripts\WorkItemSampleDataService.ts" />
+    <TypeScriptCompile Include="sdk\jasmine\jasmine.d.ts" />
+    <TypeScriptCompile Include="sdk\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="sdk\knockout\knockout.d.ts" />
+    <TypeScriptCompile Include="sdk\q\Q.d.ts" />
+    <TypeScriptCompile Include="sdk\requirejs\require.d.ts" />
+    <TypeScriptCompile Include="sdk\tfs.d.ts" />
+    <TypeScriptCompile Include="sdk\tsd.d.ts" />
+    <TypeScriptCompile Include="sdk\vss.d.ts" />
+    <TypeScriptCompile Include="test\InfrastructureTestSpec.ts" />
+    <TypeScriptCompile Include="test\IterationSampleDataServiceTestSpec.ts" />
+    <TypeScriptCompile Include="test\specrunner.ts" />
+    <TypeScriptCompile Include="test\TemplateServiceTestSpec.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>VSTS.SampleData</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52458</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44300/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>

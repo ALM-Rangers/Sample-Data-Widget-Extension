@@ -1,0 +1,1385 @@
+<?xml version="1.0"?>
+<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="d136f8b9-e9a2-4cb9-bc10-085007bde515" AssemblyVersion="14.0.23107.0" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
+  <Configuration>
+    <Group Name="IE">
+      <Setting Name="Version" Value="9.11.9600.18161" WarningLevel="1" />
+      <Setting Name="InformationBar" WarningLevel="1" />
+      <Setting Name="AutoCompletePassword" WarningLevel="1" />
+      <Setting Name="AutoCompleteForm" WarningLevel="1" />
+      <Setting Name="DefaultBrowser" Value="IEXPLORE.EXE" WarningLevel="1" />
+      <Setting Name="PopupBlocker" Value="1" WarningLevel="1" />
+      <Setting Name="TabbedBrowsing" WarningLevel="2" />
+      <Setting Name="InternetZoneSecurity" Value="66816" WarningLevel="2" />
+      <Setting Name="IntranetZoneSecurity" Value="69632" WarningLevel="2" />
+      <Setting Name="TrustedZoneSecurity" Value="0" WarningLevel="2" />
+      <Setting Name="RestrictedZoneSecurity" Value="73728" WarningLevel="2" />
+      <Setting Name="PhishingFilter" WarningLevel="1" />
+      <Setting Name="EnhancedSecurityConfiguration" WarningLevel="1" />
+    </Group>
+    <Group Name="OS">
+      <Setting Name="Name" Value="Microsoft Windows Server 2012 R2 Datacenter" WarningLevel="2" />
+      <Setting Name="Version" Value="Microsoft Windows NT 6.3.9600.0" WarningLevel="2" />
+      <Setting Name="IsUserAdmin" Value="True" WarningLevel="2" />
+      <Setting Name="Is64BitOperatingSystem" Value="True" WarningLevel="2" />
+      <Setting Name="IsTerminalServerSession" Value="True" WarningLevel="2" />
+      <Setting Name="OSLanguage" Value="1033" WarningLevel="1" />
+      <Setting Name="UserLocale" Value="1033" WarningLevel="1" />
+      <Setting Name="DragFullWindows" Value="True" WarningLevel="2" />
+      <Setting Name="ScreenResolutionWidth" Value="1920" WarningLevel="2" />
+      <Setting Name="ScreenResolutionHeight" Value="1200" WarningLevel="2" />
+      <Setting Name="SystemDPIX" Value="96" WarningLevel="2" />
+      <Setting Name="SystemDPIY" Value="96" WarningLevel="2" />
+      <Setting Name="Aero" Value="1" WarningLevel="1" />
+      <Setting Name="UACEnabled" Value="1" WarningLevel="2" />
+      <Setting Name="UACPromptEnabled" Value="5" WarningLevel="1" />
+    </Group>
+    <Group Name="TechnologyManagers">
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="UIA" WarningLevel="1" />
+    </Group>
+  </Configuration>
+  <InitializeActions />
+  <ExecuteActions>
+    <TestStepMarkerAction MarkerInformation="TestArtifact=80">
+      <ParameterName />
+      <StepId>-2147483648</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIRunningapplicationsWindow.UIRunningapplicationsToolBar.UIOverviewVisualStudioButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="85" Y="17" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Right</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIJumpListWindow.UIItemWindow.UIJumpListClient">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="83" Y="130" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction MarkerInformation="Startbrowser">
+      <ParameterName />
+      <StepId>0</StepId>
+      <Direction>Both</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UISecuritySettingsatRiWindow.UIAddressComboControlToolBar.UIItemMenuItem">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="41" Y="20" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <NavigateToUrlAction UIObjectName="UIMap.UISecuritySettingsatRiWindow">
+      <ParameterName />
+      <Url>https://almrangers-sandbox-one.visualstudio.com/DefaultCollection/SampleDataTest1/</Url>
+      <NewInstance>false</NewInstance>
+    </NavigateToUrlAction>
+    <TestStepMarkerAction MarkerInformation="Navigatetoproject">
+      <ParameterName />
+      <StepId>1</StepId>
+      <Direction>Both</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIHeaderrowPane.UIItemPane">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIMi_14Custom">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIMi_14Custom.UIManageprojectPane">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIMi_14Custom">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIMi_17Custom">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <SetStateAction UIObjectName="UIMap.UIOverviewVisualStudioWindow">
+      <ParameterName />
+      <State>Maximized</State>
+    </SetStateAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIWorkinProgress0WorkiPane.UIWorkinProgress0WorkiHyperlink">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem99Pane.UIBugEdit">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem94Pane.UIQueryreturnednoresulPane">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIWidgetscontainerPane.UIWelcomeGetstartedusiPane">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIExternalContentHost8Frame.UISampleDataWidgetDocument.UIItem1Pane.UIItemPane">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="10" Y="11" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIExternalContentHost8Frame.UISampleDataWidgetDocument.UIStarWarsAnishaDesignPane.UIStarWarsCustom">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="231" Y="13" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction MarkerInformation="SelectStarWarstemplate">
+      <ParameterName />
+      <StepId>2</StepId>
+      <Direction>Both</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem94Pane.UIQueryreturnednoresulPane1">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIWidgetscontainerPane.UIWelcomeGetstartedusiPane">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIExternalContentHost8Frame.UISampleDataWidgetDocument.UIPopulateButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="51" Y="17" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction MarkerInformation="ClickPopulate">
+      <ParameterName />
+      <StepId>3</StepId>
+      <Direction>Both</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem94Pane.UIQueryreturnednoresulPane1">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem94Pane.UI_statictfs20160204T1Image">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem92Pane">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIExternalContentHost8Frame.UISampleDataWidgetDocument.UIIconsjonathanreystarImage">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="35" Y="45" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction MarkerInformation="Wait">
+      <ParameterName />
+      <StepId>4</StepId>
+      <Direction>Both</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem94Pane.UIQueryreturnednoresulPane1">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIWidgetscontainerPane.UIWelcomeGetstartedusiPane">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIExternalContentHost8Frame.UISampleDataWidgetDocument.UIDeleteButton">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="43" Y="15" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction MarkerInformation="ClickRemove">
+      <ParameterName />
+      <StepId>5</StepId>
+      <Direction>Both</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem94Pane.UIQueryreturnednoresulPane1">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIWidgetscontainerPane.UIWelcomeGetstartedusiPane">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIExternalContentHost8Frame.UISampleDataWidgetDocument.UIProgressBarPane.UIWorkItemSampleDataSePane">
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="21" Y="10" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Click</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <TestStepMarkerAction MarkerInformation="Wait1">
+      <ParameterName />
+      <StepId>6</StepId>
+      <Direction>Both</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem94Pane.UI_statictfs20160204T1Image">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem97Pane.UIContinuouslyintegratHyperlink">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UIItem94Pane.UIQueryreturnednoresulPane1">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <MouseAction UIObjectName="UIMap.UIOverviewVisualStudioWindow.UIOverviewVisualStudioDocument.UICf83dffaafcf43f09b40Pane">
+      <ContinueOnError>True</ContinueOnError>
+      <ParameterName />
+      <ModifierKeys>None</ModifierKeys>
+      <IsGlobalHotkey>false</IsGlobalHotkey>
+      <Location X="1" Y="1" />
+      <WheelDirection>0</WheelDirection>
+      <ActionType>Hover</ActionType>
+      <MouseButton>Left</MouseButton>
+    </MouseAction>
+    <BrowserAction UIObjectName="UIMap.UIOverviewVisualStudioWindow">
+      <ParameterName />
+      <ActionType>Close</ActionType>
+    </BrowserAction>
+    <TestStepMarkerAction MarkerInformation="Item">
+      <ParameterName />
+      <StepId>7</StepId>
+      <Direction>Both</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+    <TestStepMarkerAction MarkerInformation="">
+      <ParameterName />
+      <StepId>2147483647</StepId>
+      <Direction>End</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>11737</WorkItemId>
+      <MarkerRegionType>Default</MarkerRegionType>
+    </TestStepMarkerAction>
+  </ExecuteActions>
+  <CleanupActions />
+  <OnErrorActions />
+  <Maps>
+    <UIMap Id="UIMap">
+      <TopLevelWindows>
+        <TopLevelWindow ControlType="Window" Id="UIRunningapplicationsWindow" FriendlyName="Running applications" SpecialControlType="None" SessionId="65624">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Running applications</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Running applications</PropertyCondition>
+            <PropertyCondition Name="ClassName">MSTaskSwWClass</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="ToolBar" Id="UIRunningapplicationsToolBar" FriendlyName="Running applications" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Running applications</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Running applications</PropertyCondition>
+                <PropertyCondition Name="ControlType">ToolBar</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Button" Id="UIOverviewVisualStudioButton" FriendlyName="Overview - Visual Studio Team Services - Internet ..." SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Running applications</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Overview - Visual Studio Team Services - Internet Explorer</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIJumpListWindow" FriendlyName="Jump List" SpecialControlType="None" SessionId="1444176">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Jump List</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Jump List</PropertyCondition>
+            <PropertyCondition Name="ClassName">DV2ControlHost</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Window" Id="UIItemWindow" FriendlyName="" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Jump List</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="ClassName">DesktopDestinationList</PropertyCondition>
+                <PropertyCondition Name="ControlType">Window</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Client" Id="UIJumpListClient" FriendlyName="Jump List" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Jump List</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="ControlType">Client</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UISecuritySettingsatRiWindow" FriendlyName="Security Settings at Risk - Internet Explorer" SpecialControlType="BrowserWindow" SessionId="3015296">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Security Settings at Risk</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Security Settings at Risk</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="ToolBar" Id="UIAddressComboControlToolBar" FriendlyName="Address Combo Control" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Security Settings at Risk</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="Name">Address Combo Control</PropertyCondition>
+                <PropertyCondition Name="ControlType">ToolBar</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="MenuItem" Id="UIItemMenuItem" FriendlyName="" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Security Settings at Risk</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>Expand</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="ControlType">MenuItem</PropertyCondition>
+                    <PropertyCondition Name="Instance">2</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="UIOverviewVisualStudioWindow" FriendlyName="Overview - Visual Studio Team Services - Internet ..." SpecialControlType="BrowserWindow" SessionId="3015296">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Overview - Visual Studio Team Services</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>0</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="UIOverviewVisualStudioDocument" FriendlyName="Overview - Visual Studio Team Services" SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Overview - Visual Studio Team Services</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/DefaultCollection/SampleDataTest1/_dashboards</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">https://almrangers-sandbox-one.visualstudio.com/DefaultCollection/SampleDataTest1/_dashboards</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Pane" Id="UIHeaderrowPane" FriendlyName="header-row" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">header-row</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Visual Studio Team Services  / SampleDat</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">nav-separated</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="nav-separated" id="header-row" role="banner"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">5</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Pane" Id="UIItemPane" FriendlyName="|" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                          <PropertyCondition Name="TagName">SPAN</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="InnerText">|</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Class">vertical-bar</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="vertical-bar"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">6</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Custom" Id="UIMi_14Custom" FriendlyName="mi_14" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Custom</PropertyCondition>
+                      <PropertyCondition Name="TagName">LI</PropertyCondition>
+                      <PropertyCondition Name="Id">mi_14</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Class">menu-item</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="menu-item" id="mi_14" role="menui</PropertyCondition>
+                      <PropertyCondition Name="InnerText" />
+                      <PropertyCondition Name="TagInstance">7</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Pane" Id="UIManageprojectPane" FriendlyName="Manage project" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                          <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="InnerText" />
+                          <PropertyCondition Name="Title">Manage project</PropertyCondition>
+                          <PropertyCondition Name="Class">bowtie-icon bowtie-settings-gear icon</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">title="Manage project" class="bowtie-icon bowtie-settings-gear icon"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">13</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Custom" Id="UIMi_17Custom" FriendlyName="mi_17" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Custom</PropertyCondition>
+                      <PropertyCondition Name="TagName">LI</PropertyCondition>
+                      <PropertyCondition Name="Id">mi_17</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="Class">menu-item</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="menu-item" id="mi_17" role="menui</PropertyCondition>
+                      <PropertyCondition Name="InnerText" />
+                      <PropertyCondition Name="TagInstance">9</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Pane" Id="UIWorkinProgress0WorkiPane" FriendlyName="Work in Progress 0 Work items" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">109</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Work in Progress
+
+0
+
+Work items</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">count-control</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="count-control" id="109"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">176</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="UIWorkinProgress0WorkiHyperlink" FriendlyName="Work in Progress 0 Work items" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">Work in Progress
+
+0
+
+Work items</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath" />
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Href">/DefaultCollection/SampleDataTest1/_workItems/resultsById/7c34a77c-74d3-4d6b-afa4-39fdc94db3cf</PropertyCondition>
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">href="/DefaultCollection/SampleDataTest1</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Pane" Id="UIItem99Pane" FriendlyName="99" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">99</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText" />
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">combo input-text-box new-work-item-type list drop</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="combo input-text-box new-work-item-type list drop" id="99"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">165</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Edit" Id="UIBugEdit" FriendlyName="Bug" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                          <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="LabeledBy" />
+                          <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="Title">Bug</PropertyCondition>
+                          <PropertyCondition Name="Class">new-work-item-type-input</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">title="Bug" class="new-work-item-type-in</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Pane" Id="UIItem94Pane" FriendlyName="94" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">94</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Work in Progress 
+
+
+
+
+
+
+ID
+
+
+</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">wit-querygrid-widget-view</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="wit-querygrid-widget-view" id="94"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">82</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Pane" Id="UIQueryreturnednoresulPane" FriendlyName="Query returned no results. Create new wo" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                          <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="InnerText">Query returned no results. Create new wo</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Class">wit-widget-no-results-message</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="wit-widget-no-results-message"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">111</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                    <UIObject ControlType="Pane" Id="UIQueryreturnednoresulPane1" FriendlyName="Query returned no results. Create new wo" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                          <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="InnerText">Query returned no results. Create new wo</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Class">wit-widget-no-results-container</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="wit-widget-no-results-container" style="display: block;"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">110</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                    <UIObject ControlType="Image" Id="UI_statictfs20160204T1Image" FriendlyName="/_static/tfs/20160204T180102/_content/chart-noresu..." SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Image</PropertyCondition>
+                          <PropertyCondition Name="TagName">IMG</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Alt" />
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">/_static/tfs/20160204T180102/_content/chart-noresult-3.png</PropertyCondition>
+                          <PropertyCondition Name="Src">https://almrangers-sandbox-one.visualstudio.com/_static/tfs/20160204T180102/_content/chart-noresult-3.png</PropertyCondition>
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">src="/_static/tfs/20160204T180102/_conte</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Pane" Id="UIWidgetscontainerPane" FriendlyName="widgets-container" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">widgets-container</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Welcome
+
+Get started using Visual Stud</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">gridster ready</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="gridster ready" id="widgets-container" style="display: block;"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">55</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Pane" Id="UIWelcomeGetstartedusiPane" FriendlyName="Welcome Get started using Visual Stud" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                          <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="InnerText">Welcome
+
+Get started using Visual Stud</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Class">gridster-items</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="gridster-items" style="width: 1530px; height: 510px; position: relative;"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">57</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Frame" Id="UIExternalContentHost8Frame" FriendlyName="externalContentHost85" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Frame</PropertyCondition>
+                      <PropertyCondition Name="TagName">IFRAME</PropertyCondition>
+                      <PropertyCondition Name="Id">externalContentHost85</PropertyCondition>
+                      <PropertyCondition Name="Name">externalContentHost85</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="AbsolutePath">/_apis/public/gallery/publisher/mskold/extension/INT-SampleDataWidget/0.1.0.25/privateasset/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwbiI6Im1za29sZCIsImVuIjoiSU5ULVNhbXBsZURhdGFXaWRnZXQiLCJleHAiOiIxNDU1MjE5NjU3In0=.eGkrRFB3blcxZnQ2VHhTZWFKU0VWeXFxUXNGSlJOcnFmdkRrMmUrMlh4az0=/index.html</PropertyCondition>
+                      <PropertyCondition Name="PageUrl">https://mskold.gallery.vsassets.io/_apis/public/gallery/publisher/mskold/extension/INT-SampleDataWidget/0.1.0.25/privateasset/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwbiI6Im1za29sZCIsImVuIjoiSU5ULVNhbXBsZURhdGFXaWRnZXQiLCJleHAiOiIxNDU1MjE5NjU3In0=.eGkrRFB3blcxZnQ2VHhTZWFKU0VWeXFxUXNGSlJOcnFmdkRrMmUrMlh4az0=/index.html</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">external-content-iframe</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="externalContentHost85" class="exte</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Document" Id="UISampleDataWidgetDocument" FriendlyName="Sample Data Widget" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                          <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                          <PropertyCondition Name="FrameDocument">True</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="Title">Sample Data Widget</PropertyCondition>
+                          <PropertyCondition Name="AbsolutePath">/_apis/public/gallery/publisher/mskold/extension/INT-SampleDataWidget/0.1.0.25/privateasset/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwbiI6Im1za29sZCIsImVuIjoiSU5ULVNhbXBsZURhdGFXaWRnZXQiLCJleHAiOiIxNDU1MjE5NjU3In0=.eGkrRFB3blcxZnQ2VHhTZWFKU0VWeXFxUXNGSlJOcnFmdkRrMmUrMlh4az0=/index.html</PropertyCondition>
+                          <PropertyCondition Name="PageUrl">https://mskold.gallery.vsassets.io/_apis/public/gallery/publisher/mskold/extension/INT-SampleDataWidget/0.1.0.25/privateasset/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwbiI6Im1za29sZCIsImVuIjoiSU5ULVNhbXBsZURhdGFXaWRnZXQiLCJleHAiOiIxNDU1MjE5NjU3In0=.eGkrRFB3blcxZnQ2VHhTZWFKU0VWeXFxUXNGSlJOcnFmdkRrMmUrMlh4az0=/index.html</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants>
+                        <UIObject ControlType="Pane" Id="UIItem1Pane" FriendlyName="1" SpecialControlType="None">
+                          <TechnologyName>Web</TechnologyName>
+                          <WindowTitles>
+                            <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                          </WindowTitles>
+                          <AndCondition Id="SearchCondition">
+                            <AndCondition Id="Primary">
+                              <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                              <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                              <PropertyCondition Name="Id">1</PropertyCondition>
+                              <PropertyCondition Name="Name" />
+                            </AndCondition>
+                            <FilterCondition Id="Secondary">
+                              <PropertyCondition Name="InnerText" />
+                              <PropertyCondition Name="Title" />
+                              <PropertyCondition Name="Class">combo input-text-box list drop</PropertyCondition>
+                              <PropertyCondition Name="ControlDefinition">class="combo input-text-box list drop" id="1" style="width: 100%;"</PropertyCondition>
+                              <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                            </FilterCondition>
+                          </AndCondition>
+                          <SupportLevel>0</SupportLevel>
+                          <Descendants>
+                            <UIObject ControlType="Pane" Id="UIItemPane" FriendlyName="" SpecialControlType="None">
+                              <TechnologyName>Web</TechnologyName>
+                              <WindowTitles>
+                                <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                              </WindowTitles>
+                              <AndCondition Id="SearchCondition">
+                                <AndCondition Id="Primary">
+                                  <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                                  <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                                  <PropertyCondition Name="Id" />
+                                  <PropertyCondition Name="Name" />
+                                </AndCondition>
+                                <FilterCondition Id="Secondary">
+                                  <PropertyCondition Name="InnerText" />
+                                  <PropertyCondition Name="Title" />
+                                  <PropertyCondition Name="Class">drop bowtie-icon bowtie-triangle-down</PropertyCondition>
+                                  <PropertyCondition Name="ControlDefinition">class="drop bowtie-icon bowtie-triangle-down"</PropertyCondition>
+                                  <PropertyCondition Name="TagInstance">10</PropertyCondition>
+                                </FilterCondition>
+                              </AndCondition>
+                              <SupportLevel>0</SupportLevel>
+                              <Descendants />
+                            </UIObject>
+                          </Descendants>
+                        </UIObject>
+                        <UIObject ControlType="Pane" Id="UIStarWarsAnishaDesignPane" FriendlyName="StarWars Anisha Design Review" SpecialControlType="None">
+                          <TechnologyName>Web</TechnologyName>
+                          <WindowTitles>
+                            <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                          </WindowTitles>
+                          <AndCondition Id="SearchCondition">
+                            <AndCondition Id="Primary">
+                              <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                              <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                              <PropertyCondition Name="Id">2</PropertyCondition>
+                              <PropertyCondition Name="Name" />
+                            </AndCondition>
+                            <FilterCondition Id="Secondary">
+                              <PropertyCondition Name="InnerText">StarWars
+Anisha Design Review </PropertyCondition>
+                              <PropertyCondition Name="Title" />
+                              <PropertyCondition Name="Class">combo-drop-popup virtualizing-list-view</PropertyCondition>
+                              <PropertyCondition Name="ControlDefinition">class="combo-drop-popup virtualizing-list-view" id="2" style="left: 10px; top: 77px; width: 310px; height: 46px; z-index: 20000;"</PropertyCondition>
+                              <PropertyCondition Name="TagInstance">11</PropertyCondition>
+                            </FilterCondition>
+                          </AndCondition>
+                          <SupportLevel>0</SupportLevel>
+                          <Descendants>
+                            <UIObject ControlType="Custom" Id="UIStarWarsCustom" FriendlyName="StarWars" SpecialControlType="None">
+                              <TechnologyName>Web</TechnologyName>
+                              <WindowTitles>
+                                <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                              </WindowTitles>
+                              <AndCondition Id="SearchCondition">
+                                <AndCondition Id="Primary">
+                                  <PropertyCondition Name="ControlType">Custom</PropertyCondition>
+                                  <PropertyCondition Name="TagName">LI</PropertyCondition>
+                                  <PropertyCondition Name="Id" />
+                                  <PropertyCondition Name="Name" />
+                                </AndCondition>
+                                <FilterCondition Id="Secondary">
+                                  <PropertyCondition Name="Class" />
+                                  <PropertyCondition Name="ControlDefinition">title="StarWars"</PropertyCondition>
+                                  <PropertyCondition Name="InnerText">StarWars</PropertyCondition>
+                                  <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                                </FilterCondition>
+                              </AndCondition>
+                              <SupportLevel>0</SupportLevel>
+                              <Descendants />
+                            </UIObject>
+                          </Descendants>
+                        </UIObject>
+                        <UIObject ControlType="Button" Id="UIPopulateButton" FriendlyName="Populate" SpecialControlType="None">
+                          <TechnologyName>Web</TechnologyName>
+                          <WindowTitles>
+                            <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                          </WindowTitles>
+                          <AndCondition Id="SearchCondition">
+                            <AndCondition Id="Primary">
+                              <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                              <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                              <PropertyCondition Name="Id">Create</PropertyCondition>
+                              <PropertyCondition Name="Name" />
+                              <PropertyCondition Name="DisplayText">Populate</PropertyCondition>
+                              <PropertyCondition Name="Type">button</PropertyCondition>
+                            </AndCondition>
+                            <FilterCondition Id="Secondary">
+                              <PropertyCondition Name="Title">Create demo data</PropertyCondition>
+                              <PropertyCondition Name="Class">SampleActionButton</PropertyCondition>
+                              <PropertyCondition Name="ControlDefinition">title="Create demo data" class="SampleAc</PropertyCondition>
+                              <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                            </FilterCondition>
+                          </AndCondition>
+                          <SupportLevel>0</SupportLevel>
+                          <Descendants />
+                        </UIObject>
+                        <UIObject ControlType="Image" Id="UIIconsjonathanreystarImage" FriendlyName="/icons/jonathan-rey/star-wars-characters/64/Yoda-0..." SpecialControlType="None">
+                          <TechnologyName>Web</TechnologyName>
+                          <WindowTitles>
+                            <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                          </WindowTitles>
+                          <AndCondition Id="SearchCondition">
+                            <AndCondition Id="Primary">
+                              <PropertyCondition Name="ControlType">Image</PropertyCondition>
+                              <PropertyCondition Name="TagName">IMG</PropertyCondition>
+                              <PropertyCondition Name="Id">TemplateIcon</PropertyCondition>
+                              <PropertyCondition Name="Name" />
+                              <PropertyCondition Name="Alt" />
+                            </AndCondition>
+                            <FilterCondition Id="Secondary">
+                              <PropertyCondition Name="AbsolutePath">/icons/jonathan-rey/star-wars-characters/64/Yoda-01-icon.png</PropertyCondition>
+                              <PropertyCondition Name="Src">http://icons.iconarchive.com/icons/jonathan-rey/star-wars-characters/64/Yoda-01-icon.png</PropertyCondition>
+                              <PropertyCondition Name="Class" />
+                              <PropertyCondition Name="ControlDefinition">id="TemplateIcon" style="float: left;" s</PropertyCondition>
+                              <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                            </FilterCondition>
+                          </AndCondition>
+                          <SupportLevel>0</SupportLevel>
+                          <Descendants />
+                        </UIObject>
+                        <UIObject ControlType="Button" Id="UIDeleteButton" FriendlyName="Delete" SpecialControlType="None">
+                          <TechnologyName>Web</TechnologyName>
+                          <WindowTitles>
+                            <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                          </WindowTitles>
+                          <AndCondition Id="SearchCondition">
+                            <AndCondition Id="Primary">
+                              <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                              <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                              <PropertyCondition Name="Id">Delete</PropertyCondition>
+                              <PropertyCondition Name="Name" />
+                              <PropertyCondition Name="DisplayText">Delete</PropertyCondition>
+                              <PropertyCondition Name="Type">button</PropertyCondition>
+                            </AndCondition>
+                            <FilterCondition Id="Secondary">
+                              <PropertyCondition Name="Title">Delete demo data</PropertyCondition>
+                              <PropertyCondition Name="Class">SampleActionButton</PropertyCondition>
+                              <PropertyCondition Name="ControlDefinition">title="Delete demo data" class="SampleAc</PropertyCondition>
+                              <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                            </FilterCondition>
+                          </AndCondition>
+                          <SupportLevel>0</SupportLevel>
+                          <Descendants />
+                        </UIObject>
+                        <UIObject ControlType="Pane" Id="UIProgressBarPane" FriendlyName="ProgressBar" SpecialControlType="None">
+                          <TechnologyName>Web</TechnologyName>
+                          <WindowTitles>
+                            <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                          </WindowTitles>
+                          <AndCondition Id="SearchCondition">
+                            <AndCondition Id="Primary">
+                              <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                              <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                              <PropertyCondition Name="Id">ProgressBar</PropertyCondition>
+                              <PropertyCondition Name="Name" />
+                            </AndCondition>
+                            <FilterCondition Id="Secondary">
+                              <PropertyCondition Name="InnerText" />
+                              <PropertyCondition Name="Title" />
+                              <PropertyCondition Name="Class">ProgessBar</PropertyCondition>
+                              <PropertyCondition Name="ControlDefinition">class="ProgessBar" id="ProgressBar"</PropertyCondition>
+                              <PropertyCondition Name="TagInstance">13</PropertyCondition>
+                            </FilterCondition>
+                          </AndCondition>
+                          <SupportLevel>0</SupportLevel>
+                          <Descendants>
+                            <UIObject ControlType="Pane" Id="UIWorkItemSampleDataSePane" FriendlyName="WorkItemSampleDataServiceTFS.WebApi.Exception: TF4..." SpecialControlType="None">
+                              <TechnologyName>Web</TechnologyName>
+                              <WindowTitles>
+                                <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                              </WindowTitles>
+                              <AndCondition Id="SearchCondition">
+                                <AndCondition Id="Primary">
+                                  <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                                  <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                                  <PropertyCondition Name="Id" />
+                                  <PropertyCondition Name="Name" />
+                                </AndCondition>
+                                <FilterCondition Id="Secondary">
+                                  <PropertyCondition Name="InnerText" />
+                                  <PropertyCondition Name="Title">WorkItemSampleDataServiceTFS.WebApi.Exception: TF400898: An Internal Error Occurred. Activity Id: 88cd160e-998c-413c-a0e2-7de9cac79205.</PropertyCondition>
+                                  <PropertyCondition Name="Class">ProgressTask TaskStatusFailed</PropertyCondition>
+                                  <PropertyCondition Name="ControlDefinition">title="WorkItemSampleDataServiceTFS.WebApi.Exception: TF400898: An Internal Error Occurred. Activity Id: 88cd160e-998c-413c-a0e2-7de9cac79205." class="ProgressTask TaskStatusFailed" style="width: 44.28px;"</PropertyCondition>
+                                  <PropertyCondition Name="TagInstance">19</PropertyCondition>
+                                </FilterCondition>
+                              </AndCondition>
+                              <SupportLevel>0</SupportLevel>
+                              <Descendants />
+                            </UIObject>
+                          </Descendants>
+                        </UIObject>
+                      </Descendants>
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Pane" Id="UIItem92Pane" FriendlyName="92" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">92</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Visual Studio
+
+Open in Visual Studio
+</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">visual-studio-links</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="visual-studio-links" id="92"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">142</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Pane" Id="UIItem97Pane" FriendlyName="97" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">97</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Continuously integrate
+
+Automate your </PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">how-to-link how-to-link-build</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="how-to-link how-to-link-build" id="97"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">70</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="UIContinuouslyintegratHyperlink" FriendlyName="Continuously integrate Automate your builds" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target">_blank</PropertyCondition>
+                          <PropertyCondition Name="InnerText">Continuously integrate
+
+Automate your builds</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath" />
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Href">/DefaultCollection/SampleDataTest1/_build</PropertyCondition>
+                          <PropertyCondition Name="Class">how-to-link-anchor</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="how-to-link-anchor" href="/Defaul</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Pane" Id="UICf83dffaafcf43f09b40Pane" FriendlyName="cf83dffa-afcf-43f0-9b40-82ac7a4e652e" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Overview - Visual Studio Team Services</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">cf83dffa-afcf-43f0-9b40-82ac7a4e652e</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Welcome
+
+Get started using Visual Stud</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">id="cf83dffa-afcf-43f0-9b40-82ac7a4e652e"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">54</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+      </TopLevelWindows>
+    </UIMap>
+  </Maps>
+  <ValueMap>
+    <ParameterList />
+  </ValueMap>
+</UITest>

@@ -1,0 +1,17 @@
+﻿{
+  "Iterations": [
+    { "Path": "Sample", "Name" :  "Sprint 1", "startDate" :  "2015-12-01T00:00:00Z", "finishDate" :  "2015-12-14T00:00:00Z" },
+    { "Path": "Sample", "Name" :  "Sprint 2", "startDate" :  "2015-12-15T00:00:00Z", "finishDate" :  "2015-12-28T00:00:00Z"  },
+    { "Path": "Sample", "Name" :  "Sprint 3", "startDate" :  "2015-12-29T00:00:00Z", "finishDate" :  "2016-01-12T00:00:00Z"  },
+    { "Path": "Sample", "Name" :  "Sprint 4", "startDate" :  "2015-01-13T00:00:00Z", "finishDate" :  "2015-12-26T00:00:00Z"  }
+  ],
+   "Areas": [
+    { "Path": "", "Name" :"Area 1" },
+    { "Path": "Area 1", "Name" :"Sub Area 1" },
+    { "Path": "", "Name" :"Area 3" },
+    {
+      "Path": "",
+      "Name": "Area 4"
+    }
+  ]
+}

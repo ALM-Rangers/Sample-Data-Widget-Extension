@@ -1,0 +1,96 @@
+<!-- ---------------------------------------------------------------------
+// <copyright file="configuration.html">
+//    This code is licensed under the MIT License.
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+//    PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// </copyright>
+// <summary>
+//   
+// </summary>
+//---------------------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="css/app.css" rel="stylesheet" />
+    <script src="scripts/SDK/VSS.SDK.min.js"></script>
+    <script src="scripts/SDK/q.js"></script>
+    <script src="scripts/SDK/ai.0.22.9-build00167.min.js"></script>
+    <script src="scripts/TelemetryClient.js"></script>
+
+    <script type="text/javascript">
+        console.log("Loading config.html");
+        VSS.init({
+            explicitNotifyLoaded: true,
+            usePlatformScripts: true,
+            usePlatformStyles: true,
+            setupModuleLoader: true,
+            moduleLoaderConfig: {
+                paths: {
+                    "scripts": "scripts"
+                }
+            }
+        });
+        VSS.ready(function () {
+            console.log("VSS Ready ");
+            VSS.require(["TFS/Dashboards/WidgetHelpers",
+            "scripts/ConfigView"], function (WidgetHelpers, ConfigView) {
+                var view = null;
+                console.log("VSS Require");
+                  VSS.register("sample-data-widget.configuration", function () {
+            
+                      return {
+                          load: function (widgetSettings, widgetConfigurationContext) {
+                              var settings = JSON.parse(widgetSettings.customSettings.data);
+                              view = new ConfigView.ConfigView();
+                              view.WidgetHelpers = WidgetHelpers;
+                              view.InitView(widgetSettings, widgetConfigurationContext);
+                              VSS.resize();
+                              return WidgetHelpers.WidgetStatusHelper.Success();
+                          },
+                          
+                          onSave: function () {
+                              
+                              view.SaveSettings().then(
+                                  function (success) {
+                                      console.log("Settings Saved");
+                                  },
+                                  function (err) {
+                                      console.log("Not saved");
+                                  });
+                              var customSettings = { 
+                                  data: JSON.stringify({fake:true}) };
+
+                              return WidgetHelpers.WidgetConfigurationSave.Valid(customSettings);
+                              
+                          }
+                      }
+                  });
+                  VSS.notifyLoadSucceeded();
+              });
+            });
+      
+
+
+            
+    </script>
+</head>
+<body>
+    <div class="container" style="min-height:850px;">
+        <fieldset>
+            <label>
+                <input id="chkCustomTemplate" type="checkbox"  />
+                Enable custom templates
+            </label>
+            <br />
+         <div id="AccountSpecific" style="display:none; margin-top:10px;" >
+                <label class="label">Template data</label>
+                <textarea  id="txtCustomTemplateData" style="width:400px; margin-top:5px;" rows="30"/>
+            </div>
+
+        </fieldset>
+    </div>
+</body>
+</html>

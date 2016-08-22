@@ -1,0 +1,2930 @@
+﻿[
+  {
+    "Name": "PartsUnlimited",
+    "Description": "Chucks PartsUnlimited",
+    "IconUrl": "/img/Kanban.png",
+    "Message": "Learn how to use the agile boards",
+    "TryItLink": "_backlogs/board",
+
+    "DataServices": [
+        {
+        "Service": "IterationSampleDataService",
+        "Name": "Iterations",
+        "TemplateData": {
+          "nodes": [
+            {
+              "Path": "",
+              "Name": "Sprint 1"
+            },
+            {
+              "Path": "",
+              "Name": "Sprint 2"
+            },
+                        {
+              "Path": "",
+              "Name": "Sprint 3"
+            }
+
+
+          ]
+
+        }
+      },
+
+      {
+        "Service": "WorkItemSampleDataService",
+        "Name": "Work items",
+        "DependentOn": "IterationSampleDataService",
+        "TemplateData": {
+          "templatedWorkItems": [
+            {
+              "templateWorkItemId": "710",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Approved"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As developer, I want to create a Azure website and update it from Visual Studio so that we can get to work with no delay."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "711",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Approved"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As developer, I want to setup a Team Project with GIT and CI, so that every check-in will automatically trigger a build from source to the Azure web site."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "712",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As project lead, I want to start visualizing my backlog on a Kanban board."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "713",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Approved"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As project lead, I want to set up a dashboard that captures key engineering metrics the team will use daily."
+                },
+                {
+                  "Field": "Microsoft.VSTS.Common.AcceptanceCriteria",
+                  "Value": "<p>dsfg</p><p><a href=\"http://www.partsunlimitedweb.auzrewebsites.com/.home\">www.partsunlimitedweb.auzrewebsites.com/.home</a></p><p><br></p><p><br></p>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "714",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Done"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As developer, I want us to extend the CI into an automated release pipeline with stages, so that we can add progressive testing to each stage and automate deployment."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "715",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Committed"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As ops guy, I have never seen this level of traffic to the site and AI is showing us unexpected bottlenecks and hangs where the app calls out to the recommendation service. Can you guys do something?"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "716",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Done"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As dev manager, with multiple teams, I now need to manage a hierarchical backlog for the enterprise."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "717",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Approved"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As dev manager, I want to move our legacy MRP system (on Linux and Java) to IaaS, so that we can get control of it back, and integrate it with Project Unicorn so that we can build inventory to order rather than to forecast."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "718",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Committed"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As an Ops guy, I want to ensure that the legacy MRP system configuration is consistent."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "719",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Done"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Ops needs the ability to quickly roll back to a known good state in the event of a critical problem in production."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "720",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As a business owner, I would like to know how much our historical spend is to help project future spend for budgeting + financials."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "721",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As ops guy, I'd like to make sure I am notified anytime public availability is impacted for key user scenarios"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "722",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As ops guy, I'd like to keep the business owners happy ensuring there is no wasted spend in cloud resources."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "723",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As a marketeer i want our website to be performant and available around the world"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "724",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "We want to make frequent enhancements to the MRP application and need to modernize the application from its current legacy state."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "725",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Hackathon: DevOps Challenge Documents for Ignite"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "726",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "I want to ensure I have a seamless pipeline from checking in my code in VSO and have it deployed automatically to my Azure Website."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "727",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As developer, I want a clone of the Phoenix order entry and inventory database, so that we can work clean and decoupled from the Phoenix legacy team."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "728",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As tester, I need to test the website on all the relevant broswers and devices and be sure that it can handle our load."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "729",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As developer, I want to use Azure Machine Learning to provide a recommendations engine behind the website."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "730",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As marketer, I want to run an A|B test on alternative Web Sites using Application Insights."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "731",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As marketeer, I want us to reuse the web assets for apps on Android and iOS with corporate branding, and I will want to be able to update the device apps with every marketing promotion. That will mean using Cordova."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "732",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As dev, I can fix the hangs by simply turning off the setting in the Project K config file to the recommendations system and we'll monitor again.."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "733",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As ops guy, I want to make sure our autoscale policies can handle the load."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "734",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Dev and Ops need to work together to have the ability to automate the creation of the entire Phoenix project website infrastructure and app from source code."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "735",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As dev, I'll create a new web and mobile site for direct customer shipment for self-service or store managers use so that backorders and crosshipments can be captured right away."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "736",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As the infra guy, I want to use the CDN to speed up our graphics use and large file loads and monitor the performance impact."
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "737",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "mrp"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "738",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add personlization to the product offering"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "739",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Verify the product catalogue can support Amazon integration loads"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "740",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add Personlization to the ordering process"
+                }
+              ]
+            },
+   
+            {
+              "templateWorkItemId": "743",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Shopping using categories Test Case"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"7\"><step type=\"ValidateStep\" id=\"2\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;Start Application&amp;nbsp;&lt;/P&gt;&lt;A class=\"block logo-image\" style=\"width: 156px;height: 73px;color: rgb(66, 66, 66);line-height: 18.18px;padding-right: 10px;font-family: &amp;amp;quot\" href=\"http://partsunlimitedweb.azurewebsites.net/\"&gt;&lt;IMG style=\"border: 0px currentColor;vertical-align: middle\" alt=\"Parts Unlimited logo\" src=\"http://partsunlimitedweb.azurewebsites.net/Images/unlimited_logo.png\"/&gt;&lt;/A&gt;&lt;A class=\"block\" style=\"color: rgb(66, 66, 66);line-height: 18.18px;font-family: &amp;amp;quot\" href=\"http://partsunlimitedweb.azurewebsites.net/\"&gt;&lt;H1 style=\"margin: 10px 0px 0px;color: inherit;line-height: 1.1;font-size: 36px;font-weight: 300\"&gt;Parts Unlimited&lt;/H1&gt;&lt;H2 style=\"color: inherit;line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;margin-top: 0px;margin-bottom: 10px\"&gt;a Fabrikam subsidiary&lt;/H2&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;P&gt;&amp;nbsp;The application Starts&lt;/P&gt;</parameterizedString><description /></step><step type=\"ValidateStep\" id=\"3\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&amp;nbsp;Navigate to tires &lt;/P&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;color: rgb(66, 66, 66);line-height: 18.18px;padding-right: 15px;padding-left: 15px;font-family: &amp;amp;quot\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Matte Finish Rim\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/4\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;vertical-align: middle\" alt=\"Matte Finish Rim\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"detail\" style=\"width: 208.86px;text-align: center;background-color: rgb(28, 54, 124)\"&gt;&lt;H4 style=\"margin: 0px;padding: 5px;color: rgb(238, 238, 238);line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;white-space: nowrap\"&gt;Matte Finish Rim&lt;/H4&gt;&lt;H5 style=\"margin: 0px;padding: 5px 0px 8px;color: rgb(238, 238, 238);line-height: 1.1;font-family: &amp;amp;quot\"&gt;$75.99&lt;/H5&gt;&lt;/DIV&gt;&lt;DIV class=\"mouse-over hidden-xs\" style=\"width: 208.86px\"&gt;&lt;DIV class=\"image-second\" style=\"width: 208.86px\"&gt;&lt;IMG style=\"border: 0px currentColor;width: 208.86px;vertical-align: middle\" alt=\"Matte Finish Rim zoom\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"shop-now\" style=\"height: 71px;text-align: center;color: rgb(238, 238, 238);padding-top: 14px;font-size: 28px;background-color: rgb(42, 42, 42)\"&gt;&lt;SPAN class=\"glyphicon glyphicon-shopping-cart\" style=\"line-height: 1;font-family: &amp;amp;quot\"&gt;&lt;/SPAN&gt;&amp;nbsp;Shop Now&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;color: rgb(66, 66, 66);line-height: 18.18px;padding-right: 15px;padding-left: 15px;font-family: &amp;amp;quot\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Blue Performance Alloy Rim\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/5\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;vertical-align: middle\" alt=\"Blue Performance Alloy Rim\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim-blue.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"detail\" style=\"width: 208.86px;text-align: center;background-color: rgb(28, 54, 124)\"&gt;&lt;H4 style=\"margin: 0px;padding: 5px;color: rgb(238, 238, 238);line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;white-space: nowrap\"&gt;Blue Performance Alloy Rim&lt;/H4&gt;&lt;H5 style=\"margin: 0px;padding: 5px 0px 8px;color: rgb(238, 238, 238);line-height: 1.1;font-family: &amp;amp;quot\"&gt;$88.99&lt;/H5&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;P&gt;&amp;nbsp;The UI Takes you to tires&lt;/P&gt;</parameterizedString><description /></step><step type=\"ValidateStep\" id=\"4\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&amp;nbsp;Navigate to Lights &lt;/P&gt;&lt;H2 style=\"color: rgb(66, 66, 66);line-height: 1.1;padding-bottom: 10px\"&gt;Lighting&lt;/H2&gt;&lt;DIV class=\"row\" style=\"color: rgb(66, 66, 66);line-height: 18.18px\"&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;padding-right: 15px;padding-left: 15px;float: left\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Halogen Headlights (2 Pack)\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/1\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;vertical-align: middle\" alt=\"Halogen Headlights (2 Pack)\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"detail\" style=\"width: 208.86px;text-align: center;background-color: rgb(28, 54, 124)\"&gt;&lt;H4 style=\"margin: 0px;padding: 5px;color: rgb(238, 238, 238);line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;white-space: nowrap\"&gt;Halogen Headlights (2 Pack)&lt;/H4&gt;&lt;H5 style=\"margin: 0px;padding: 5px 0px 8px;color: rgb(238, 238, 238);line-height: 1.1\"&gt;$38.99&lt;/H5&gt;&lt;/DIV&gt;&lt;DIV class=\"mouse-over hidden-xs\" style=\"width: 208.86px\"&gt;&lt;DIV class=\"image-second\" style=\"width: 208.86px\"&gt;&lt;IMG style=\"border: 0px currentColor;width: 208.86px;vertical-align: middle\" alt=\"Halogen Headlights (2 Pack) zoom\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"shop-now\" style=\"height: 71px;text-align: center;color: rgb(238, 238, 238);padding-top: 14px;font-size: 28px;background-color: rgb(42, 42, 42)\"&gt;&lt;SPAN class=\"glyphicon glyphicon-shopping-cart\" style=\"line-height: 1\"&gt;&lt;/SPAN&gt;&amp;nbsp;Shop Now&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;padding-right: 15px;padding-left: 15px;float: left\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Bugeye Headlights (2 Pack)\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/2\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;vertical-align: middle\" alt=\"Bugeye Headlights (2 Pack)\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"detail\" style=\"width: 208.86px;text-align: center;background-color: rgb(28, 54, 124)\"&gt;&lt;H4 style=\"margin: 0px;padding: 5px;color: rgb(238, 238, 238);line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;white-space: nowrap\"&gt;Bugeye Headlights (2 Pack)&lt;/H4&gt;&lt;H5 style=\"margin: 0px;padding: 5px 0px 8px;color: rgb(238, 238, 238);line-height: 1.1\"&gt;$48.99&lt;/H5&gt;&lt;/DIV&gt;&lt;DIV class=\"mouse-over hidden-xs\" style=\"width: 208.86px\"&gt;&lt;DIV class=\"image-second\" style=\"width: 208.86px\"&gt;&lt;IMG style=\"border: 0px currentColor;width: 208.86px;vertical-align: middle\" alt=\"Bugeye Headlights (2 Pack) zoom\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"shop-now\" style=\"height: 71px;text-align: center;color: rgb(238, 238, 238);padding-top: 14px;font-size: 28px;background-color: rgb(42, 42, 42)\"&gt;&lt;SPAN class=\"glyphicon glyphicon-shopping-cart\" style=\"line-height: 1\"&gt;&lt;/SPAN&gt;&amp;nbsp;Shop Now&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;padding-right: 15px;padding-left: 15px;float: left\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Turn Signal Light Bulb\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/3\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;P&gt;Navigates to Lights&amp;nbsp;&lt;/P&gt;</parameterizedString><description /></step><step type=\"ActionStep\" id=\"5\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;Add to cart&amp;nbsp;&lt;/P&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;color: rgb(66, 66, 66);line-height: 18.18px;font-family: &amp;amp;quot\" alt=\"Filter Set\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_oil_filters.jpg\"/&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\"ActionStep\" id=\"6\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;Check out&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\"ActionStep\" id=\"7\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step></steps>"
+                }
+              ]
+            },
+  
+            {
+              "templateWorkItemId": "750",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Purchasing Bug for XT Session"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><div><div><img src=null style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br></div><ul style=\"margin:10px;padding:0;\"><div style=\"margin-left:30px;\"><ins><b>Observations</b></ins></div><p style=\"white-space:pre;margin-left:30px;color:#0079CC;\">Partsunlimted Website XT Session</p><img src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=1214\" style=\"max-width:70%;border:solid 1px grey;padding:2px;margin-left:30px;\"><br><i style=\"margin-left:30px;\">Source: <a href=\"https://partsunlimited.visualstudio.com/DefaultCollection/CorysParts/_dashboards\" style=\"font-style:italic;\">https://partsunlimited.visualstudio.com/Defau...</a></i><br><br><p style=\"white-space:pre;margin-left:30px;color:#0079CC;\">Saving screenshot</p><li>Click on  <div class=action-log-image style=\"overflow:hidden;position:relative;width:300px;height:60px;border:solid 1px grey;margin:5px;\"><img class=action-log-image src=\"https://partsunlimited.visualstudio.com/DefaultCollection/_apis/wit/attachments/c7f03440-11f5-4811-894a-d742bac33989?fileName=d62bce23-edab-404c-8abc-3887f84803e9?fileName=actionLog_77239.jpeg\" style=\"position:absolute;top:-236px;left:-1620px;\"></div></li></ul></div><ul style=\"margin:10px;padding:0;\"><div style=\"margin-left:30px;\"><ins><b>Observations</b></ins></div><img src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=1222\" style=\"max-width:70%;border:solid 1px grey;padding:2px;margin-left:30px;\"><br><i style=\"margin-left:30px;\">Source: <a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Browse?CategoryId=2\" style=\"font-style:italic;\">http://partsunlimitedweb.azurewebsites.net/St...</a></i><br><br><p style=\"white-space:pre;margin-left:30px;color:#0079CC;\">XT Session</p><li>Click on  <i>'Lighting'</i>.<div class=action-log-image style=\"overflow:hidden;position:relative;width:300px;height:60px;border:solid 1px grey;margin:5px;\"><img class=action-log-image src=\"https://partsunlimited.visualstudio.com/DefaultCollection/_apis/wit/attachments/faf76f56-8d58-4778-b4ed-35fff03baa53?fileName=actionLog_33512.jpeg\" style=\"position:absolute;top:-236px;left:-732px;\"></div></li><li>Click on link <i>'Oil'</i>.<div class=action-log-image style=\"overflow:hidden;position:relative;width:300px;height:60px;border:solid 1px grey;margin:5px;\"><img class=action-log-image src=\"https://partsunlimited.visualstudio.com/DefaultCollection/_apis/wit/attachments/70d1058b-4481-4418-9afb-4fe988ac4838?fileName=actionLog_34761.jpeg\" style=\"position:absolute;top:-115px;left:-435px;\"></div></li></ul></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "755",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "As a user I want to view my product by category so that i can more easily buy the products I am interested in"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "756",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add categories"
+                }
+              ],
+              "Parent": "755",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "757",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Update navigation"
+                }
+              ],
+              "Parent": "755",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "758",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Update homepage graphic"
+                }
+              ],
+              "Parent": "755",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "759",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Internationalization spelling errors"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div>The home page has&nbsp;Internationalization spelling errors...please update</div>"
+                }
+              ]
+            },
+
+            {
+              "templateWorkItemId": "769",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Internationalization Test Case"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"3\"><step id=\"2\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;asfdasdf&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description/></step><step id=\"3\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;asdf&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description/></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "770",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Verify Branding"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "771",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Performance of Categories"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "772",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Performance of purchasing"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "773",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Capacity verification"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "774",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Response SLA verifcatino"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "775",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Product Load Verification"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "776",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Mobile verification"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "777",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Native App versions"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "778",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Underwater device Versions"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "779",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "IOT Telemetry of products"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "780",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Customer Testomonial"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "781",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Reviews"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "782",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "An Issue with the device version of Parts Unlimited"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=884\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Captured from: <a href=\"https://partsunlimited.visualstudio.com/DefaultCollection/CorysParts/_backlogs#level=Backlog+items&amp;showParents=false&amp;_a=backlog\" style=\"font-style:italic;\">https://partsunlimited.visualstudio.com/DefaultCollection/CorysParts/_backlogs#level=Backlog+items&amp;showParents=false&amp;_a=backlog</a><i><br>Annotated&nbsp;version below</i></i><div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=885\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br></div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "783",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "International bug"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><p style=\"white-space:pre;\">they look great</p><br><i>Captured from: <a href=\"http://partsunlimitedweb.azurewebsites.net/\" style=\"font-style:italic;\">http://partsunlimitedweb.azurewebsites.net/</a></i><i><i><br><br><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=891\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Captured from: <a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Browse?CategoryId=3\" style=\"font-style:italic;\">http://partsunlimitedweb.azurewebsites.net/Store/Browse?CategoryId=3</a><i><br><br></i></i></i></i><div></div><div><i><i><i><i>please updatred</i></i></i></i></div><div><i><i><i><i><br></i></i></i></i></div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "784",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Price needs updates"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=896\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><div>Please updarte wheel price&nbsp;<br><i>Captured from: <a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Browse?CategoryId=3\" style=\"font-style:italic;\">http://partsunlimitedweb.azurewebsites.net/Store/Browse?CategoryId=3</a><i><br><br></i></i></div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "785",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Logo Bug in Ipad air 2"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=898\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Captured from: <a href=\"https://microsoft.perfectomobile.com/nexperience/main.jsp?applicationName=Sprinter&amp;id=C16F0503A6C0CDAED9CD12EA8C34784B6DDBBA92\" style=\"font-style:italic;\">https://microsoft.perfectomobile.com/nexperience/main.jsp?applicationName=Sprinter&amp;id=C16F0503A6C0CDAED9CD12EA8C34784B6DDBBA92</a><i><br><br></i></i><div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=899\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br></div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "790",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "labels showing worng"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=901\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Captured from: <a href=\"https://partsunlimited.visualstudio.com/DefaultCollection/CorysParts/_testManagement\" style=\"font-style:italic;\">https://partsunlimited.visualstudio.com/DefaultCollection/CorysParts/_testManagement</a><i><br><br><p style=\"white-space:pre;\">0pleaw3 t5ak qa loik</p></i></i></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "791",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Label bug"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=903\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><div><br></div><div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=904\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br></div><div><br></div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "792",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Parts Unlimited Tire Category Issue"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=910\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Captured from: <a href=\"https://partsunlimitedweb.azurewebsites.net/\" style=\"font-style:italic;\">https://partsunlimitedweb.azurewebsites.net/</a><i><br><br><p style=\"white-space:pre;\">I am testing things!</p><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=911\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Captured from: <a href=\"https://partsunlimitedweb.azurewebsites.net/\" style=\"font-style:italic;\">https://partsunlimitedweb.azurewebsites.net/</a><i><br><br><p style=\"white-space:pre;\">Please fix old logo will file bug</p></i></i></i></i></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "793",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Add a turbos categoriy"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><p style=\"white-space:pre;\">New Session</p><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=913\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Captured from: <a href=\"https://partsunlimitedweb.azurewebsites.net/\" style=\"font-style:italic;\">https://partsunlimitedweb.azurewebsites.net/</a><i><br><br><p style=\"white-space:pre;\">new imgae</p><img class=xt-image-attachment src=undefined style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Captured from: <a href=\"https://partsunlimitedweb.azurewebsites.net/\" style=\"font-style:italic;\">https://partsunlimitedweb.azurewebsites.net/</a><i><br><br></i></i></i></i></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "794",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Bug about contact information from the application"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "Exploratory test session started on 11/12/2015 3:04:29 PM"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<table style=\"WORD-BREAK:break-all;\">\n<tbody>\n<tr>\n<td style=\"WIDTH:10px;\"></td>\n<td>\n<p><b><u>Observations</u></b></p>\n<p>text here</p></td></tr></tbody></table>\n<table style=\"WORD-BREAK:break-all;\">\n<tbody>\n<tr>\n<td style=\"WIDTH:10px;\"></td>\n<td><img id=linkmarker border=0 alt=Screenshot1_2015-11-12T23_07_26.png src=\"https://partsunlimited.visualstudio.com/DefaultCollection/TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=916\" width=253 height=182> \n<p></p>more text</td></tr></tbody></table><br>\n<p style=\"FONT-WEIGHT:bold;\">Diagnostic Data Adapter</p>\n<p><a href=\"vstfs:///TestManagement/TcmResultAttachment/0.0.917\">System Information</a></p><br>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "795",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "A new test case"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<p>text here</p><img id=linkmarker border=0 alt=Screenshot1_2015-11-12T23_07_26.png src=\"https://partsunlimited.visualstudio.com/DefaultCollection/TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=916\" width=253 height=182> \n<p></p>more text"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "839",
+              "CreateExpr": "",
+              "Type": "@RequirementType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@RequirementType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "New work"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "840",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Tire Price Should be update"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "841",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Done"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Prototype Azure WS"
+                }
+              ],
+              "Parent": "710",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "842",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Storyboard the Azure WS"
+                }
+              ],
+              "Parent": "710",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "843",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "In Progress"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Storyboard the Dashboard"
+                }
+              ],
+              "Parent": "713",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "844",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "In Progress"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Trial CI in Prod"
+                }
+              ],
+              "Parent": "711",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "845",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Trial CD in staging"
+                }
+              ],
+              "Parent": "711",
+              "LinkType": "System.LinkTypes.Hierarchy-Reverse"
+            },
+            {
+              "templateWorkItemId": "846",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Navigation Test Case"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"1\"><step id=\"1\" type=\"ValidateStep\"><parameterizedString isformatted=\"true\">Steps</parameterizedString><parameterizedString isformatted=\"true\">Result</parameterizedString><description/></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "847",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Closed"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Test Azure Creation"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"8\"><step id=\"2\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Create Setup Project *.zip </parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"3\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Add Load Testing Task</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"4\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Deploy</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"5\" type=\"ValidateStep\"><parameterizedString isformatted=\"true\">Verify creation</parameterizedString><parameterizedString isformatted=\"true\">Web site Exists</parameterizedString><description/></step><step id=\"6\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Test Runs</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"7\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Performance</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"8\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Resource Groups</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "848",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Ready"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Test CI Runs"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"6\"><step id=\"2\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Create CI Build</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"3\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Add Testing Task</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"4\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Checkin a change</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"5\" type=\"ValidateStep\"><parameterizedString isformatted=\"true\">Verify Queued</parameterizedString><parameterizedString isformatted=\"true\">Queued Run</parameterizedString><description/></step><step id=\"6\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Test Runs</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "849",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Test CD Runs"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"6\"><step id=\"2\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Create CI Build</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"3\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Add Testing Task</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"4\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Checkin a change</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"5\" type=\"ValidateStep\"><parameterizedString isformatted=\"true\">Verify Queued</parameterizedString><parameterizedString isformatted=\"true\">Queued Run</parameterizedString><description/></step><step id=\"6\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Test Runs</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "850",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "New bug from Runner"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><hr style=\"border-color:black;\"><table><tbody><tr><td style=\"padding:2px 7px;font-weight:bold;vertical-align:top;\">12/1/2015  8:50 AM</td><td style=\"padding:2px 7px 2px 10px;vertical-align:top;\">Bug filed on &quot;Internationalization Test Case&quot;</td></tr></tbody></table><hr style=\"border-color:black;\"><table><tbody><tr><td style=\"padding:2px 7px;font-weight:bold;vertical-align:top;\">Test Configuration:</td><td style=\"padding:2px 7px 2px 100px;vertical-align:top;\">Windows 8</td></tr></tbody></table><hr style=\"border-color:white;\"><br></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "851",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Ready"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Test Azure Website Creation"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"8\"><step id=\"2\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Create Setup Project *.zip </parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"3\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Add Load Testing Task</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"4\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Deploy</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"5\" type=\"ValidateStep\"><parameterizedString isformatted=\"true\">Verify creation</parameterizedString><parameterizedString isformatted=\"true\">Web site Exists</parameterizedString><description/></step><step id=\"6\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Test Runs</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"7\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Performance</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"8\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Resource Groups</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "852",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Ready"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Test CI Runs"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"6\"><step id=\"2\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Create CI Build</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"3\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Add Testing Task</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"4\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Checkin a change</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"5\" type=\"ValidateStep\"><parameterizedString isformatted=\"true\">Verify Queued</parameterizedString><parameterizedString isformatted=\"true\">Queued Run</parameterizedString><description/></step><step id=\"6\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Test Runs</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "853",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Test CD Runs"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"6\"><step id=\"2\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Create CI Build</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"3\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Add Testing Task</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"4\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Checkin a change</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"5\" type=\"ValidateStep\"><parameterizedString isformatted=\"true\">Verify Queued</parameterizedString><parameterizedString isformatted=\"true\">Queued Run</parameterizedString><description/></step><step id=\"6\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Test Runs</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "854",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 3"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Closed"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Test End to End Automation"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"6\"><step id=\"2\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Create CI Build</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"3\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Add Testing Task</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"4\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Checkin a change</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step><step id=\"5\" type=\"ValidateStep\"><parameterizedString isformatted=\"true\">Verify Queued</parameterizedString><parameterizedString isformatted=\"true\">Queued Run</parameterizedString><description/></step><step id=\"6\" type=\"ActionStep\"><parameterizedString isformatted=\"true\">Verify Test Runs</parameterizedString><parameterizedString isformatted=\"true\"/><description/></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "855",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Old Logo in new stie for ALM Insiders"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=943\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><p style=\"white-space:pre;\">The new UI looks Great</p><p style=\"white-space:pre;\"><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=944\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br></p></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "856",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Sel_IE_Navigate Failed in 20151130.18"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<span style=\"color:6d6d6d;\">Test</span>: <b>PartsUnlimited.Tests.StartupTests.Sel_IE_Navigate</b><br><span style=\"color:6d6d6d;\">Priority</span>: <span style=\"color:6d6d6d;\">not available</span><br><span style=\"color:6d6d6d;\">Container</span>: partsunlimitedwebsitetests.dll<br><span style=\"color:6d6d6d;\">Machine</span>: TASKAGENT2-0004<br><span style=\"color:6d6d6d;\">Tested build</span>: <a href=\"/DefaultCollection/CorysParts/_Build#_a=summary&amp;buildId=2481\" target=_blank>20151130.18</a><br><span style=\"color:6d6d6d;\">Error message</span>: <b>Assert.Fail failed. </b><br><span style=\"color:6d6d6d;\">Stack trace</span>: <br><span>   at PartsUnlimited.Tests.StartupTests.Sel_IE_Navigate() in C:\\a\\1\\s\\PartsUnlimited-aspnet45\\PartsUnlimitedWebsiteTests\\StartupTests.cs:line 83\n</span><br><br>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "857",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Sel_IE_Navigate Failed in 2488"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<span style=\"color:6d6d6d;\">Test</span>: <b>PartsUnlimited.Tests.StartupTests.Sel_IE_Navigate</b><br><span style=\"color:6d6d6d;\">Priority</span>: <span style=\"color:6d6d6d;\">not available</span><br><span style=\"color:6d6d6d;\">Container</span>: partsunlimitedwebsitetests.dll<br><span style=\"color:6d6d6d;\">Machine</span>: TASKAGENT2-0012<br><span style=\"color:6d6d6d;\">Tested build</span>: <a href=\"/DefaultCollection/CorysParts/_Build#_a=summary&amp;buildId=2488\" target=_blank>2488</a><br><span style=\"color:6d6d6d;\">Error message</span>: <b>Assert.Fail failed. </b><br><span style=\"color:6d6d6d;\">Stack trace</span>: <br><span>   at PartsUnlimited.Tests.StartupTests.Sel_IE_Navigate() in C:\\a\\1\\s\\PartsUnlimited-aspnet45\\PartsUnlimitedWebsiteTests\\StartupTests.cs:line 83\n</span><br><br>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "858",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Logo is old!!"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=950\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Source: <a href=\"http://partsunlimitedweb.azurewebsites.net/\" style=\"font-style:italic;\">http://partsunlimitedweb.azurewebsites.net/</a></i><br><br><p style=\"white-space:pre;\">taking a look at @9997 and verify value chain exists</p></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "865",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Sel_IE_Navigate Failed in 2733"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<span>Test</span>: <b>PartsUnlimited.Tests.StartupTests.Sel_IE_Navigate</b><br><span>Priority</span>: <span>not available</span><br><span>Container</span>: partsunlimitedwebsitetests.dll<br><span>Machine</span>: TASKAGENT2-0017<br><span>Tested build</span>: <a href=\"/DefaultCollection/CorysParts/_Build#_a=summary&amp;buildId=2733\" target=_blank>2733</a><br><span>Error message</span>: <b>Assert.Fail failed. </b><br><span>Stack trace</span>: <br><span>   at PartsUnlimited.Tests.StartupTests.Sel_IE_Navigate() in C:\\a\\1\\s\\PartsUnlimited-aspnet45\\PartsUnlimitedWebsiteTests\\StartupTests.cs:line 83\n</span><br><br>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "866",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "New color theme hard to read"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div>New color theme hard to read</div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "868",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "New Bug with Search"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><div><p style=\"white-space:pre;\">asdfasdf</p><img src=null style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><i>Source: <a href=\"chrome://newtab/\" style=\"font-style:italic;\">chrome://newtab/</a></i><br><br><p style=\"white-space:pre;\">asdfasdf</p></div><ul style=\"margin:10px;padding:0;\"></ul></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "869",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "VS Failing Bug"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "Exploratory test session started on 1/19/2016 2:55:37 PM"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<table style=\"WORD-BREAK:break-all;\">\n<tbody>\n<tr>\n<td style=\"WIDTH:10px;\"></td>\n<td>\n<p><b><u>Observations</u></b></p><img id=linkmarker border=0 alt=Screenshot1_2016-01-19T22_55_43.png src=\"https://partsunlimited.visualstudio.com/DefaultCollection/TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=1154\" width=253 height=132> \n<p></p>VS Running...looking for video</td></tr></tbody></table><br>\n<p style=\"FONT-WEIGHT:bold;\">Diagnostic Data Adapter</p>\n<p><a href=\"vstfs:///TestManagement/TcmResultAttachment/0.0.1156\">Screen and Voice Recorder</a></p>\n<p><a href=\"vstfs:///TestManagement/TcmResultAttachment/0.0.1155\">System Information</a></p><br>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "870",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TestCaseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "VS Bug"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<img id=linkmarker border=0 alt=Screenshot1_2016-01-19T22_55_43.png src=\"https://partsunlimited.visualstudio.com/DefaultCollection/TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=1154\" width=253 height=132> \n<p></p>VS Running...looking for video"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"1\"><step id=\"1\" type=\"ActionStep\"><parameterizedString isformatted=\"true\"></parameterizedString><parameterizedString isformatted=\"true\"></parameterizedString><description /></step></steps>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "871",
+              "CreateExpr": "",
+              "Type": "@FeatureType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeatureType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "test"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "872",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "testzzz"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "873",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "testzzz"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "874",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "testz123"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "883",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "ALM Blog has incorrect Font"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><img class=xt-image-attachment src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=1211\" style=\"max-width:70%;border:solid 1px grey;padding:2px;\"><br><p style=\"white-space:pre;\">Checking out the new blog</p></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "884",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Be sure and include a dark theme"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<div>Be sure and include a dark theme<ul style=\"margin:10px;padding:0;\"></ul></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "885",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Shopping Category Bug for Lights"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><ul style=\"margin:10px;padding:0;\"><li>Click on link <i>'Wheels &amp; Tires'</i>.<div class=action-log-image style=\"overflow:hidden;position:relative;width:300px;height:60px;border:solid 1px grey;margin:5px;\"><img class=action-log-image src=\"https://partsunlimited.visualstudio.com/DefaultCollection/_apis/wit/attachments/1a85b847-1124-470c-9d20-98253bdd7fe7?fileName=actionLog_81167.jpeg\" style=\"position:absolute;top:-112px;left:-203px;\"></div></li><li>Click on link <i>'Lighting'</i>.<div class=action-log-image style=\"overflow:hidden;position:relative;width:300px;height:60px;border:solid 1px grey;margin:5px;\"><img class=action-log-image src=\"https://partsunlimited.visualstudio.com/DefaultCollection/_apis/wit/attachments/3de94f6f-be24-46fd-a5d2-f67d0ea95376?fileName=actionLog_82018.jpeg\" style=\"position:absolute;top:-116px;left:-45px;\"></div></li><li>Click on link <i>'Brakes'</i>.<div class=action-log-image style=\"overflow:hidden;position:relative;width:300px;height:60px;border:solid 1px grey;margin:5px;\"><img class=action-log-image src=\"https://partsunlimited.visualstudio.com/DefaultCollection/_apis/wit/attachments/edf9e3d7-cb44-493a-9359-e8c8f68775ff?fileName=actionLog_82605.jpeg\" style=\"position:absolute;top:-127px;left:0;\"></div></li><li>Click on link <i>'Oil'</i>.<div class=action-log-image style=\"overflow:hidden;position:relative;width:300px;height:60px;border:solid 1px grey;margin:5px;\"><img class=action-log-image src=\"https://partsunlimited.visualstudio.com/DefaultCollection/_apis/wit/attachments/8a1d1bac-8827-49b3-9da1-e3698c5e1b26?fileName=actionLog_83755.jpeg\" style=\"position:absolute;top:-109px;left:-439px;\"></div></li><li>Click on link <i>'More'</i>.<div class=action-log-image style=\"overflow:hidden;position:relative;width:300px;height:60px;border:solid 1px grey;margin:5px;\"><img class=action-log-image src=\"https://partsunlimited.visualstudio.com/DefaultCollection/_apis/wit/attachments/3beefa60-da0d-4ce3-968e-af9cc9af2f18?fileName=actionLog_84268.jpeg\" style=\"position:absolute;top:-110px;left:-530px;\"></div></li><div style=\"margin-left:30px;\"><ins><b>Observations</b></ins></div><img src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=1224\" style=\"max-width:70%;border:solid 1px grey;padding:2px;margin-left:30px;\"><br><i style=\"margin-left:30px;\">Source: <a href=\"http://partsunlimitedweb.azurewebsites.net/Store\" style=\"font-style:italic;\">http://partsunlimitedweb.azurewebsites.net/St...</a></i><br><br><p style=\"white-space:pre;margin-left:30px;color:#0079CC;\">Shopping cAtegory</p></ul></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "886",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "VS PU Bug"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><div style=\"margin-top:10px;margin-right:10px;margin-bottom:10px;padding:0;\"><img src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=1228\" style=\"max-width:70%;border:solid 1px grey;padding:2px;margin-left:0px;margin-top:5px;\"><br><i style=\"margin-left:0px;\">Source: <a href=\"https://partsunlimited.visualstudio.com/DefaultCollection/CorysParts/_dashboards\" style=\"font-style:italic;\">https://partsunlimited.visualstudio.com/Defau...</a></i><br><br><div class=scroll-to-bottom></div><p style=\"white-space:pre;margin-left:0px;color:#0079CC;\">New Text Here</p><div class=scroll-to-bottom></div></div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "887",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "New Bug for the development team of the homepage"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><div style=\"margin-top:10px;margin-right:10px;margin-bottom:10px;padding:0;\"><img src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=1228\" style=\"max-width:70%;border:solid 1px grey;padding:2px;margin-left:0px;margin-top:5px;\"><br><i style=\"margin-left:0px;\">Source: <a href=\"https://partsunlimited.visualstudio.com/DefaultCollection/CorysParts/_dashboards\" style=\"font-style:italic;\">https://partsunlimited.visualstudio.com/Defau...</a></i><br><br><div class=scroll-to-bottom></div><p style=\"white-space:pre;margin-left:0px;color:#0079CC;\">New Text Here</p><p style=\"white-space:pre;margin-left:0px;color:#0079CC;\">Bug</p><div class=scroll-to-bottom></div></div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "888",
+              "CreateExpr": "",
+              "Type": "@TaskType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@TaskType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "To Do"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "New bug"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<div><div style=\"margin-top:10px;margin-right:10px;margin-bottom:10px;padding:0;\"><img src=\"https://partsunlimited.visualstudio.com/DefaultCollection//TestManagement/v1.0/AttachmentDownload.ashx?run=0&amp;res=0&amp;id=1231\" style=\"max-width:70%;border:solid 1px grey;padding:2px;margin-left:0px;margin-top:5px;\"><br><i style=\"margin-left:0px;\">Source: <a href=\"http://partsunlimitedweb.azurewebsites.net/Account/Login\" style=\"font-style:italic;\">http://partsunlimitedweb.azurewebsites.net/Ac...</a></i><br><br><div class=scroll-to-bottom></div><p style=\"white-space:pre;margin-left:0px;color:#0079CC;\">sdasdf</p><div class=scroll-to-bottom></div></div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "889",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Shopping Categories Bug"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><hr style=\"border-color:black;\"><table><tbody><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">2/2/2016  5:49 PM</td><td style=\"vertical-align:top;padding:2px 7px 2px 10px;\">Bug filed on &quot;Shopping using categories Test Case&quot;</td></tr></tbody></table><hr style=\"border-color:black;\"><table><tbody><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">Step no.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">Result</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">Title</td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">1.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(0, 128, 0);\">Passed</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>Start Application&nbsp;</p><a class=\"block logo-image\" href=\"http://partsunlimitedweb.azurewebsites.net/\" style=\"color:rgb(66, 66, 66);margin-top:10px;padding-right:10px;width:156px;height:73px;float:left;font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><img src=\"http://partsunlimitedweb.azurewebsites.net/Images/unlimited_logo.png\" alt=\"Parts Unlimited logo\" style=\"border:0px;vertical-align:middle;\"></a><a class=block href=\"http://partsunlimitedweb.azurewebsites.net/\" style=\"color:rgb(66, 66, 66);float:left;font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><h1 style=\"margin:10px 0px 0px;font-size:36px;font-weight:300;line-height:1.1;color:inherit;\">Parts Unlimited</h1><h2 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:0px;margin-bottom:10px;font-size:20px;\">a Fabrikam subsidiary</h2></a></div></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">2.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(0, 128, 0);\">Passed</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>&nbsp;Navigate to tires </p><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;color:rgb(66, 66, 66);font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/4\" title=\"Matte Finish Rim\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim.jpg\" alt=\"Matte Finish Rim\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;\"></div><div class=detail style=\"width:208.864px;text-align:center;background-color:rgb(28, 54, 124);\"><h4 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:20px;white-space:nowrap;padding:5px;\">Matte Finish Rim</h4><h5 style=\"font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:400;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:24px;padding:5px 0px 8px;\">$75.99</h5></div><div class=\"mouse-over hidden-xs\" style=\"width:208.864px;\"><div class=image-second style=\"width:208.864px;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim.jpg\" alt=\"Matte Finish Rim zoom\" style=\"border:0px;vertical-align:middle;width:208.864px;\"></div><div class=shop-now style=\"height:71px;text-align:center;font-size:28px;padding-top:14px;color:rgb(238, 238, 238);background-color:rgb(42, 42, 42);\"><span class=\"glyphicon glyphicon-shopping-cart\" style=\"font-family:'Glyphicons Halflings';line-height:1;\"></span>&nbsp;Shop Now</div></div></div></a></div></div><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;color:rgb(66, 66, 66);font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/5\" title=\"Blue Performance Alloy Rim\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim-blue.jpg\" alt=\"Blue Performance Alloy Rim\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;\"></div><div class=detail style=\"width:208.864px;text-align:center;background-color:rgb(28, 54, 124);\"><h4 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:20px;white-space:nowrap;padding:5px;\">Blue Performance Alloy Rim</h4><h5 style=\"font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:400;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:24px;padding:5px 0px 8px;\">$88.99</h5></div></div></a></div></div></div></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">3.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(0, 128, 0);\">Passed</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>&nbsp;Navigate to Lights </p><h2 style=\"font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:500;line-height:1.1;color:rgb(66, 66, 66);margin-top:0px;margin-bottom:25px;font-size:30px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgb(209, 209, 209);padding-bottom:10px;white-space:normal;background-color:rgb(255, 255, 255);\">Lighting</h2><div class=row style=\"margin-right:-15px;margin-left:-15px;color:rgb(66, 66, 66);font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/1\" title=\"Halogen Headlights (2 Pack)\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\" alt=\"Halogen Headlights (2 Pack)\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;\"></div><div class=detail style=\"width:208.864px;text-align:center;background-color:rgb(28, 54, 124);\"><h4 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:20px;white-space:nowrap;padding:5px;\">Halogen Headlights (2 Pack)</h4><h5 style=\"font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:400;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:24px;padding:5px 0px 8px;\">$38.99</h5></div><div class=\"mouse-over hidden-xs\" style=\"width:208.864px;\"><div class=image-second style=\"width:208.864px;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\" alt=\"Halogen Headlights (2 Pack) zoom\" style=\"border:0px;vertical-align:middle;width:208.864px;\"></div><div class=shop-now style=\"height:71px;text-align:center;font-size:28px;padding-top:14px;color:rgb(238, 238, 238);background-color:rgb(42, 42, 42);\"><span class=\"glyphicon glyphicon-shopping-cart\" style=\"font-family:'Glyphicons Halflings';line-height:1;\"></span>&nbsp;Shop Now</div></div></div></a></div></div><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/2\" title=\"Bugeye Headlights (2 Pack)\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\" alt=\"Bugeye Headlights (2 Pack)\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;\"></div><div class=detail style=\"width:208.864px;text-align:center;background-color:rgb(28, 54, 124);\"><h4 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:20px;white-space:nowrap;padding:5px;\">Bugeye Headlights (2 Pack)</h4><h5 style=\"font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:400;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:24px;padding:5px 0px 8px;\">$48.99</h5></div><div class=\"mouse-over hidden-xs\" style=\"width:208.864px;\"><div class=image-second style=\"width:208.864px;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\" alt=\"Bugeye Headlights (2 Pack) zoom\" style=\"border:0px;vertical-align:middle;width:208.864px;\"></div><div class=shop-now style=\"height:71px;text-align:center;font-size:28px;padding-top:14px;color:rgb(238, 238, 238);background-color:rgb(42, 42, 42);\"><span class=\"glyphicon glyphicon-shopping-cart\" style=\"font-family:'Glyphicons Halflings';line-height:1;\"></span>&nbsp;Shop Now</div></div></div></a></div></div><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/3\" title=\"Turn Signal Light Bulb\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"></div></div></a></div></div></div></div></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">4.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(0, 128, 0);\">Passed</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>Add to cart&nbsp;</p><p>&nbsp;</p><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_oil_filters.jpg\" alt=\"Filter Set\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;color:rgb(66, 66, 66);font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"></div></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">5.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(61, 176, 255);\">None</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><p>Check out&nbsp;</p></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">6.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(61, 176, 255);\">None</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>&nbsp;</p></div></div></td></tr></tbody></table><hr style=\"border-color:white;\"><table><tbody><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">Test Configuration:</td><td style=\"vertical-align:top;padding:2px 7px 2px 100px;\">Windows 8</td></tr></tbody></table><hr style=\"border-color:white;\"><br></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "890",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Shopping using categories Test Case Passed"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<span style=\"color:6d6d6d;\">Test</span>: <b>Shopping using categories Test Case</b><br><span style=\"color:6d6d6d;\">Priority</span>: 2<br><span style=\"color:6d6d6d;\">Container</span>: <span style=\"color:6d6d6d;\">not available</span><br><span style=\"color:6d6d6d;\">Machine</span>: <span style=\"color:6d6d6d;\">not available</span><br><span style=\"color:6d6d6d;\">Tested build</span>: <span style=\"color:6d6d6d;\">not available</span><br><span style=\"color:6d6d6d;\">Error message</span>: <span style=\"color:6d6d6d;\">not available</span><br><span style=\"color:6d6d6d;\">Stack trace</span>: <span style=\"color:6d6d6d;\">not available</span><br><br>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "891",
+              "CreateExpr": "",
+              "Type": "@BugType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 1"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@BugType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "New"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Too many lights in the lights category"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.ReproSteps",
+                  "Value": "<div><hr style=\"border-color:black;\"><table><tbody><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">2/2/2016  6:02 PM</td><td style=\"vertical-align:top;padding:2px 7px 2px 10px;\">Bug filed on &quot;Shopping using categories Test Case&quot;</td></tr></tbody></table><hr style=\"border-color:black;\"><table><tbody><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">Step no.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">Result</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">Title</td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">1.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(0, 128, 0);\">Passed</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>Start Application&nbsp;</p><a class=\"block logo-image\" href=\"http://partsunlimitedweb.azurewebsites.net/\" style=\"color:rgb(66, 66, 66);margin-top:10px;padding-right:10px;width:156px;height:73px;float:left;font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><img src=\"http://partsunlimitedweb.azurewebsites.net/Images/unlimited_logo.png\" alt=\"Parts Unlimited logo\" style=\"border:0px;vertical-align:middle;\"></a><a class=block href=\"http://partsunlimitedweb.azurewebsites.net/\" style=\"color:rgb(66, 66, 66);float:left;font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><h1 style=\"margin:10px 0px 0px;font-size:36px;font-weight:300;line-height:1.1;color:inherit;\">Parts Unlimited</h1><h2 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:0px;margin-bottom:10px;font-size:20px;\">a Fabrikam subsidiary</h2></a></div></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">2.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(0, 128, 0);\">Passed</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>&nbsp;Navigate to tires </p><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;color:rgb(66, 66, 66);font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/4\" title=\"Matte Finish Rim\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim.jpg\" alt=\"Matte Finish Rim\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;\"></div><div class=detail style=\"width:208.864px;text-align:center;background-color:rgb(28, 54, 124);\"><h4 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:20px;white-space:nowrap;padding:5px;\">Matte Finish Rim</h4><h5 style=\"font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:400;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:24px;padding:5px 0px 8px;\">$75.99</h5></div><div class=\"mouse-over hidden-xs\" style=\"width:208.864px;\"><div class=image-second style=\"width:208.864px;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim.jpg\" alt=\"Matte Finish Rim zoom\" style=\"border:0px;vertical-align:middle;width:208.864px;\"></div><div class=shop-now style=\"height:71px;text-align:center;font-size:28px;padding-top:14px;color:rgb(238, 238, 238);background-color:rgb(42, 42, 42);\"><span class=\"glyphicon glyphicon-shopping-cart\" style=\"font-family:'Glyphicons Halflings';line-height:1;\"></span>&nbsp;Shop Now</div></div></div></a></div></div><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;color:rgb(66, 66, 66);font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/5\" title=\"Blue Performance Alloy Rim\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim-blue.jpg\" alt=\"Blue Performance Alloy Rim\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;\"></div><div class=detail style=\"width:208.864px;text-align:center;background-color:rgb(28, 54, 124);\"><h4 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:20px;white-space:nowrap;padding:5px;\">Blue Performance Alloy Rim</h4><h5 style=\"font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:400;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:24px;padding:5px 0px 8px;\">$88.99</h5></div></div></a></div></div></div></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">3.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(255, 0, 0);\">Failed</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>&nbsp;Navigate to Lights </p><h2 style=\"font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:500;line-height:1.1;color:rgb(66, 66, 66);margin-top:0px;margin-bottom:25px;font-size:30px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgb(209, 209, 209);padding-bottom:10px;white-space:normal;background-color:rgb(255, 255, 255);\">Lighting</h2><div class=row style=\"margin-right:-15px;margin-left:-15px;color:rgb(66, 66, 66);font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/1\" title=\"Halogen Headlights (2 Pack)\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\" alt=\"Halogen Headlights (2 Pack)\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;\"></div><div class=detail style=\"width:208.864px;text-align:center;background-color:rgb(28, 54, 124);\"><h4 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:20px;white-space:nowrap;padding:5px;\">Halogen Headlights (2 Pack)</h4><h5 style=\"font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:400;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:24px;padding:5px 0px 8px;\">$38.99</h5></div><div class=\"mouse-over hidden-xs\" style=\"width:208.864px;\"><div class=image-second style=\"width:208.864px;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\" alt=\"Halogen Headlights (2 Pack) zoom\" style=\"border:0px;vertical-align:middle;width:208.864px;\"></div><div class=shop-now style=\"height:71px;text-align:center;font-size:28px;padding-top:14px;color:rgb(238, 238, 238);background-color:rgb(42, 42, 42);\"><span class=\"glyphicon glyphicon-shopping-cart\" style=\"font-family:'Glyphicons Halflings';line-height:1;\"></span>&nbsp;Shop Now</div></div></div></a></div></div><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/2\" title=\"Bugeye Headlights (2 Pack)\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\" alt=\"Bugeye Headlights (2 Pack)\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;\"></div><div class=detail style=\"width:208.864px;text-align:center;background-color:rgb(28, 54, 124);\"><h4 style=\"font-family:inherit;font-weight:500;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:20px;white-space:nowrap;padding:5px;\">Bugeye Headlights (2 Pack)</h4><h5 style=\"font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:400;line-height:1.1;color:rgb(238, 238, 238);margin:0px;font-size:24px;padding:5px 0px 8px;\">$48.99</h5></div><div class=\"mouse-over hidden-xs\" style=\"width:208.864px;\"><div class=image-second style=\"width:208.864px;\"><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\" alt=\"Bugeye Headlights (2 Pack) zoom\" style=\"border:0px;vertical-align:middle;width:208.864px;\"></div><div class=shop-now style=\"height:71px;text-align:center;font-size:28px;padding-top:14px;color:rgb(238, 238, 238);background-color:rgb(42, 42, 42);\"><span class=\"glyphicon glyphicon-shopping-cart\" style=\"font-family:'Glyphicons Halflings';line-height:1;\"></span>&nbsp;Shop Now</div></div></div></a></div></div><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"padding-right:15px;padding-left:15px;float:left;width:242.5px;\"><div class=list-item-part style=\"border:2px solid rgb(225, 225, 225);margin:0px 0px 30px;padding:0px;\"><a href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/3\" title=\"Turn Signal Light Bulb\" style=\"color:rgb(66, 66, 66);background-color:transparent;\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image style=\"width:auto;height:auto;\"></div></div></a></div></div></div></div></div><div style=\"padding-top:10px;\"><div>Comments: Too many lights!</div><div></div></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">4.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(0, 128, 0);\">Passed</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>Add to cart&nbsp;</p><p>&nbsp;</p><img src=\"http://partsunlimitedweb.azurewebsites.net/images/product_oil_filters.jpg\" alt=\"Filter Set\" style=\"border:0px;vertical-align:middle;width:208.864px;height:209.091px;margin:0px auto;color:rgb(66, 66, 66);font-family:'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:14px;line-height:18.1818px;white-space:normal;background-color:rgb(255, 255, 255);\"></div></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">5.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(255, 0, 0);\">Failed</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><p>Check out&nbsp;</p></div></td></tr><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">6.</td><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;color:rgb(61, 176, 255);\">None</td><td style=\"vertical-align:top;padding:2px 7px;\"><div><div><p>&nbsp;</p></div></div></td></tr></tbody></table><hr style=\"border-color:white;\"><table><tbody><tr><td style=\"vertical-align:top;padding:2px 7px;font-weight:bold;\">Test Configuration:</td><td style=\"vertical-align:top;padding:2px 7px 2px 100px;\">Windows 8</td></tr></tbody></table><hr style=\"border-color:white;\"><br></div>"
+                }
+              ]
+            },
+            
+
+            {
+              "templateWorkItemId": "926",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Verify Partsunlimited Website has up to date accessbility"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "Verify Partsunlimited Website has up to date accessbility"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "927",
+              "CreateExpr": "",
+              "Type": "@FeedbackResponseType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackResponseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Voluntary feedback from chass sterling."
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "Great website!"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "928",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "http://partsunlimitedweb.azurewebsites.net/"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<p>Please verify Lights</p><ul><li>LED</li><li>Incandescent</li><li>Round</li><li>Black</li></ul>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "929",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "http://partsunlimitedweb.azurewebsites.net/"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<p>Please verify batteries</p><ul><li>LED</li><li>Incandescent</li><li>Round</li><li>Black</li></ul>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "930",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "http://partsunlimitedweb.azurewebsites.net/"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "Please verify&nbsp;batteries are correct"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "931",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Check the Tires CAtegory"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<p>Microsoft Feedback Client will display a link to launch the specified application and </p><ul><li>your exact instructions, which might include</li><li>&nbsp;login credentials, specific navigations steps </li><li>to follow, or general context of the application to <strong><a aria-label=\"CTRL+Click or CTRL+Enter to follow link http://www.bing.com\" href=\"http://www.bing.com\">review.</a></strong></li></ul>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "932",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "check LIghts"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<p>Microsoft Feedback Client will display a link to launch the specified application and </p><ul><li>your exact instructions, which might include</li><li>&nbsp;login credentials, specific navigations steps </li><li>to follow, or general context of the application to <strong><a aria-label=\"CTRL+Click or CTRL+Enter to follow link http://www.bing.com\" href=\"http://www.bing.com/\">review.</a></strong></li></ul>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "933",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Verify Lights"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<h2>Lighting</h2><div class=row><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\"><div class=list-item-part><a title=\"Halogen Headlights (2 Pack)\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/1\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image><img alt=\"Halogen Headlights (2 Pack)\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\">                         </div><div class=detail><h4>Halogen Headlights (2 Pack)</h4><h5>$38.99</h5></div><div class=\"mouse-over hidden-xs\"><div class=image-second><img alt=\"Halogen Headlights (2 Pack) zoom\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\">                             </div><div class=shop-now><span class=\"glyphicon glyphicon-shopping-cart\"></span>&nbsp;<span>Shop Now</span>                             </div></div></div><div class=\"row visible-xs\"><div class=\"col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image\"><img alt=\"Halogen Headlights (2 Pack)\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\">                         </div><div class=\"col-xs-8 col-sm-12 col-md-12 detail\"><h4>Halogen Headlights (2 Pack)</h4><h5>$38.99</h5></div></div></a></div></div><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\"><div class=list-item-part><a title=\"Bugeye Headlights (2 Pack)\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/2\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image><img alt=\"Bugeye Headlights (2 Pack)\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\">                         </div><div class=detail><h4>Bugeye Headlights (2 Pack)</h4><h5>$48.99</h5></div><div class=\"mouse-over hidden-xs\"><div class=image-second><img alt=\"Bugeye Headlights (2 Pack) zoom\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\">                             </div><div class=shop-now><span class=\"glyphicon glyphicon-shopping-cart\"></span>&nbsp;<span>Shop Now</span>                             </div></div></div><div class=\"row visible-xs\"><div class=\"col-xs-4 col-sm-12 col-md-12 no-gutter-sm no-gutter image\"><img alt=\"Bugeye Headlights (2 Pack)\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\">                         </div><div class=\"col-xs-8 col-sm-12 col-md-12 detail\"><h4>Bugeye Headlights (2 Pack)</h4><h5>$48.99</h5></div></div></a></div></div><div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\"><div class=list-item-part><a title=\"Turn Signal Light Bulb\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/3\"><div class=\"product-image-container hover-over hidden-xs\"><div class=image><img alt=\"Turn Signal Light Bulb\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_lightbulb.jpg\">                         </div><div class=detail><h4>Turn Signal Light Bulb</h4><h5>$6.49</h5></div><div class=\"mouse-over hidden-xs\"><div class=image-second><img alt=\"Turn Signal Light Bulb zoom\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_lightbulb.jpg\">                             </div><div class=shop-now><span class=\"glyphicon glyphicon-shopping-cart\"></span>&nbsp;<span>Shop Now</span></div></div></div></a></div></div></div>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "934",
+              "CreateExpr": "",
+              "Type": "@FeedbackResponseType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackResponseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Voluntary feedback from chass."
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "The lights Category is looking great!"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "935",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Verify Tires"
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<p>Please verify the tires are: </p><ul><li>round</li><li>bias</li><li>radial</li><li>black</li><li>rubber</li></ul>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "936",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Please verify the lights are: "
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "<p>Please verify the lights are: </p><ul><li>LED</li><li>Bright</li><li>Clean</li><li>Eco Friendly</li></ul>"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "937",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Verify Tires"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "938",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Please verify the lights"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "939",
+              "CreateExpr": "",
+              "Type": "@FeedbackRequestType",
+              "Fields": [
+                {
+                  "Field": "System.IterationPath",
+                  "Value": "Sprint 2"
+                },
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackRequestType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Please verify the batteries"
+                }
+              ]
+            },
+            {
+              "templateWorkItemId": "940",
+              "CreateExpr": "",
+              "Type": "@FeedbackResponseType",
+              "Fields": [
+                {
+                  "Field": "System.WorkItemType",
+                  "Value": "@FeedbackResponseType"
+                },
+                {
+                  "Field": "System.State",
+                  "Value": "Active"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Voluntary feedback from chass."
+                },
+                {
+                  "Field": "System.Description",
+                  "Value": "Verifying Turbos"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+  {
+    "Name": "TestCaseTry1",
+    "Description": "Chucks PartsUnlimited",
+    "IconUrl": "/img/Kanban.png",
+    "Message": "Learn how to use the agile boards",
+    "TryItLink": "_backlogs/board",
+
+    "DataServices": [
+
+      {
+        "Service": "WorkItemSampleDataService",
+        "Name": "Work items",
+        "TemplateData": {
+          "templatedWorkItems": [
+
+
+            {
+              "templateWorkItemId": "743",
+              "CreateExpr": "",
+              "Type": "@TestCaseType",
+              "Fields": [
+                
+                {
+                  "Field": "System.State",
+                  "Value": "Design"
+                },
+                {
+                  "Field": "System.Title",
+                  "Value": "Shopping using categories Test Case"
+                },
+                {
+                  "Field": "Microsoft.VSTS.TCM.Steps",
+                  "Value": "<steps id=\"0\" last=\"7\"><step type=\"ValidateStep\" id=\"2\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;Start Application&amp;nbsp;&lt;/P&gt;&lt;A class=\"block logo-image\" style=\"width: 156px;height: 73px;color: rgb(66, 66, 66);line-height: 18.18px;padding-right: 10px;font-family: &amp;amp;quot\" href=\"http://partsunlimitedweb.azurewebsites.net/\"&gt;&lt;IMG style=\"border: 0px currentColor;vertical-align: middle\" alt=\"Parts Unlimited logo\" src=\"http://partsunlimitedweb.azurewebsites.net/Images/unlimited_logo.png\"/&gt;&lt;/A&gt;&lt;A class=\"block\" style=\"color: rgb(66, 66, 66);line-height: 18.18px;font-family: &amp;amp;quot\" href=\"http://partsunlimitedweb.azurewebsites.net/\"&gt;&lt;H1 style=\"margin: 10px 0px 0px;color: inherit;line-height: 1.1;font-size: 36px;font-weight: 300\"&gt;Parts Unlimited&lt;/H1&gt;&lt;H2 style=\"color: inherit;line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;margin-top: 0px;margin-bottom: 10px\"&gt;a Fabrikam subsidiary&lt;/H2&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;P&gt;&amp;nbsp;The application Starts&lt;/P&gt;</parameterizedString><description /></step><step type=\"ValidateStep\" id=\"3\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&amp;nbsp;Navigate to tires &lt;/P&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;color: rgb(66, 66, 66);line-height: 18.18px;padding-right: 15px;padding-left: 15px;font-family: &amp;amp;quot\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Matte Finish Rim\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/4\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;vertical-align: middle\" alt=\"Matte Finish Rim\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"detail\" style=\"width: 208.86px;text-align: center;background-color: rgb(28, 54, 124)\"&gt;&lt;H4 style=\"margin: 0px;padding: 5px;color: rgb(238, 238, 238);line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;white-space: nowrap\"&gt;Matte Finish Rim&lt;/H4&gt;&lt;H5 style=\"margin: 0px;padding: 5px 0px 8px;color: rgb(238, 238, 238);line-height: 1.1;font-family: &amp;amp;quot\"&gt;$75.99&lt;/H5&gt;&lt;/DIV&gt;&lt;DIV class=\"mouse-over hidden-xs\" style=\"width: 208.86px\"&gt;&lt;DIV class=\"image-second\" style=\"width: 208.86px\"&gt;&lt;IMG style=\"border: 0px currentColor;width: 208.86px;vertical-align: middle\" alt=\"Matte Finish Rim zoom\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"shop-now\" style=\"height: 71px;text-align: center;color: rgb(238, 238, 238);padding-top: 14px;font-size: 28px;background-color: rgb(42, 42, 42)\"&gt;&lt;SPAN class=\"glyphicon glyphicon-shopping-cart\" style=\"line-height: 1;font-family: &amp;amp;quot\"&gt;&lt;/SPAN&gt;&amp;nbsp;Shop Now&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;color: rgb(66, 66, 66);line-height: 18.18px;padding-right: 15px;padding-left: 15px;font-family: &amp;amp;quot\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Blue Performance Alloy Rim\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/5\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;vertical-align: middle\" alt=\"Blue Performance Alloy Rim\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_wheel_rim-blue.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"detail\" style=\"width: 208.86px;text-align: center;background-color: rgb(28, 54, 124)\"&gt;&lt;H4 style=\"margin: 0px;padding: 5px;color: rgb(238, 238, 238);line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;white-space: nowrap\"&gt;Blue Performance Alloy Rim&lt;/H4&gt;&lt;H5 style=\"margin: 0px;padding: 5px 0px 8px;color: rgb(238, 238, 238);line-height: 1.1;font-family: &amp;amp;quot\"&gt;$88.99&lt;/H5&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;P&gt;&amp;nbsp;The UI Takes you to tires&lt;/P&gt;</parameterizedString><description /></step><step type=\"ValidateStep\" id=\"4\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&amp;nbsp;Navigate to Lights &lt;/P&gt;&lt;H2 style=\"color: rgb(66, 66, 66);line-height: 1.1;padding-bottom: 10px\"&gt;Lighting&lt;/H2&gt;&lt;DIV class=\"row\" style=\"color: rgb(66, 66, 66);line-height: 18.18px\"&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;padding-right: 15px;padding-left: 15px;float: left\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Halogen Headlights (2 Pack)\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/1\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;vertical-align: middle\" alt=\"Halogen Headlights (2 Pack)\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"detail\" style=\"width: 208.86px;text-align: center;background-color: rgb(28, 54, 124)\"&gt;&lt;H4 style=\"margin: 0px;padding: 5px;color: rgb(238, 238, 238);line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;white-space: nowrap\"&gt;Halogen Headlights (2 Pack)&lt;/H4&gt;&lt;H5 style=\"margin: 0px;padding: 5px 0px 8px;color: rgb(238, 238, 238);line-height: 1.1\"&gt;$38.99&lt;/H5&gt;&lt;/DIV&gt;&lt;DIV class=\"mouse-over hidden-xs\" style=\"width: 208.86px\"&gt;&lt;DIV class=\"image-second\" style=\"width: 208.86px\"&gt;&lt;IMG style=\"border: 0px currentColor;width: 208.86px;vertical-align: middle\" alt=\"Halogen Headlights (2 Pack) zoom\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_headlight.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"shop-now\" style=\"height: 71px;text-align: center;color: rgb(238, 238, 238);padding-top: 14px;font-size: 28px;background-color: rgb(42, 42, 42)\"&gt;&lt;SPAN class=\"glyphicon glyphicon-shopping-cart\" style=\"line-height: 1\"&gt;&lt;/SPAN&gt;&amp;nbsp;Shop Now&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;padding-right: 15px;padding-left: 15px;float: left\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Bugeye Headlights (2 Pack)\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/2\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;vertical-align: middle\" alt=\"Bugeye Headlights (2 Pack)\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"detail\" style=\"width: 208.86px;text-align: center;background-color: rgb(28, 54, 124)\"&gt;&lt;H4 style=\"margin: 0px;padding: 5px;color: rgb(238, 238, 238);line-height: 1.1;font-family: inherit;font-size: 20px;font-weight: 500;white-space: nowrap\"&gt;Bugeye Headlights (2 Pack)&lt;/H4&gt;&lt;H5 style=\"margin: 0px;padding: 5px 0px 8px;color: rgb(238, 238, 238);line-height: 1.1\"&gt;$48.99&lt;/H5&gt;&lt;/DIV&gt;&lt;DIV class=\"mouse-over hidden-xs\" style=\"width: 208.86px\"&gt;&lt;DIV class=\"image-second\" style=\"width: 208.86px\"&gt;&lt;IMG style=\"border: 0px currentColor;width: 208.86px;vertical-align: middle\" alt=\"Bugeye Headlights (2 Pack) zoom\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_lighting_bugeye-headlight.jpg\"/&gt;&lt;/DIV&gt;&lt;DIV class=\"shop-now\" style=\"height: 71px;text-align: center;color: rgb(238, 238, 238);padding-top: 14px;font-size: 28px;background-color: rgb(42, 42, 42)\"&gt;&lt;SPAN class=\"glyphicon glyphicon-shopping-cart\" style=\"line-height: 1\"&gt;&lt;/SPAN&gt;&amp;nbsp;Shop Now&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;DIV class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" style=\"width: 242.5px;padding-right: 15px;padding-left: 15px;float: left\"&gt;&lt;DIV class=\"list-item-part\" style=\"margin: 0px 0px 30px;padding: 0px;border: 2px solid rgb(225, 225, 225)\"&gt;&lt;A title=\"Turn Signal Light Bulb\" style=\"color: rgb(66, 66, 66);background-color: transparent\" href=\"http://partsunlimitedweb.azurewebsites.net/Store/Details/3\"&gt;&lt;DIV class=\"product-image-container hover-over hidden-xs\"&gt;&lt;DIV class=\"image\" style=\"width: auto;height: auto\"&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;P&gt;Navigates to Lights&amp;nbsp;&lt;/P&gt;</parameterizedString><description /></step><step type=\"ActionStep\" id=\"5\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;Add to cart&amp;nbsp;&lt;/P&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;IMG style=\"margin: 0px auto;border: 0px currentColor;width: 208.86px;height: 209.09px;color: rgb(66, 66, 66);line-height: 18.18px;font-family: &amp;amp;quot\" alt=\"Filter Set\" src=\"http://partsunlimitedweb.azurewebsites.net/images/product_oil_filters.jpg\"/&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\"ActionStep\" id=\"6\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;Check out&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\"ActionStep\" id=\"7\"><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\"true\">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step></steps>"
+                }
+              ]
+            }
+          ]
+        }
+
+      }
+    ]
+  }
+
+]
+
