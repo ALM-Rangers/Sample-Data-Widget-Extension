@@ -30,9 +30,6 @@ You can create and add your own custom Sample Data packages through the configur
 
 We thank the following contributor(s) for this extension: Mattias Sköld, Niel Zeeman, Hassan Fadili and Igor Scheglovitov.
 
-##Notices
-Notices for certain third party software included in this solution are provided here: [Third Party Notice](ThirdPartyNotices.txt).
-
 ##Contribute
 Contributions to Sample Data are welcome. Here is how you can contribute:  
 
