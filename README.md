@@ -1,6 +1,6 @@
 # Sample-Data-Widget-Extension
 
-## Create and remove sample data ##
+## Create and remove sample data 
 
 Ever needed to have sample data to try things out on? Want to explore what Visual Studio Team Services can do? This extension lets you create and remove sample data in your project.
 
@@ -8,17 +8,16 @@ Ever needed to have sample data to try things out on? Want to explore what Visua
 
 After you have installed the extension, you can add the sample Data Widget to your dashboards and start to create and explore VSTS with the provided sample data.
  
-## Sample Data Packages ##
+## Sample Data Packages
 The extension uses Sample data packages which you can create and remove to and from any project. 
 Currently we have two packages out of the box: 
 
-
-- ###Getting started with Agile & VSTS### 
+###Getting started with Agile & VSTS
 Explore how you can create and work with work items and customize the agile boards.
 
 ![](src/SampleData/img//WIs.png)
 
-- ###SAFe with VSTS###
+###SAFe with VSTS
 Learn how to use the Scaled Agile Framework with VSTS. Sample Data generates the sample data discussed in the [Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs](https://www.visualstudio.com/docs/work/scale/scaled-agile-framework) article.
 
 ![](src/SampleData/img//safe-concepts-poster.png)
