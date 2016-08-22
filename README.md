@@ -1,5 +1,7 @@
 # Sample-Data-Widget-Extension
 
+![](https://almrangers.visualstudio.com/DefaultCollection/_apis/public/build/definitions/7f3cfb9a-d1cb-4e66-9d36-1af87b906fe9/90/badge)
+
 ## Create and remove sample data 
 
 Ever needed to have sample data to try things out on? Want to explore what Visual Studio Team Services can do? This extension lets you create and remove sample data in your project.
