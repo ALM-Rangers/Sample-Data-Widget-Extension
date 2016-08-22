@@ -15,11 +15,14 @@ Currently we have two packages out of the box:
 
 - ###Getting started with Agile & VSTS### 
 Explore how you can create and work with work items and customize the agile boards.
+
 ![](src/SampleData/img//WIs.png)
 
 - ###SAFe with VSTS###
 Learn how to use the Scaled Agile Framework with VSTS. Sample Data generates the sample data discussed in the [Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs](https://www.visualstudio.com/docs/work/scale/scaled-agile-framework) article.
+
 ![](src/SampleData/img//safe-concepts-poster.png)
+
 Image courtesy of [Leffingwell, LLC](http://scaledagileframework.com/).
 
 ## Add your own Sample Data Packages ###
