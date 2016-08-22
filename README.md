@@ -25,7 +25,6 @@ Learn how to use the Scaled Agile Framework with VSTS. Sample Data generates the
 Image courtesy of [Leffingwell, LLC](http://scaledagileframework.com/).
 
 ## Add your own Sample Data Packages ###
-***Currently we have disabled access to the configuration pane due to changes in how widgets handles configuration. We will bring back the capability to have your own custom Sample Data packages as soon as possible***
 
 You can create and add your own custom Sample Data packages through the configuration pane.
 
