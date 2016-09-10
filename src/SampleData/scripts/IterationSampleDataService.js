@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 define(["require", "exports", "../scripts/ClassificationNode", "TFS/WorkItemTracking/Contracts"], function (require, exports, Nodes, Contracts) {
+    "use strict";
     var IterationSampleDataService = (function (_super) {
         __extends(IterationSampleDataService, _super);
         function IterationSampleDataService() {
@@ -46,7 +47,7 @@ define(["require", "exports", "../scripts/ClassificationNode", "TFS/WorkItemTrac
             return defer.promise();
         };
         return IterationSampleDataService;
-    })(Nodes.ClassificationNodeService);
+    }(Nodes.ClassificationNodeService));
     exports.IterationSampleDataService = IterationSampleDataService;
 });
 //# sourceMappingURL=IterationSampleDataService.js.map

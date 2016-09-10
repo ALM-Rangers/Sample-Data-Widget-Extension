@@ -1,6 +1,7 @@
 /// <reference path="../sdk/tsd.d.ts" />
 /// <reference path="../scripts/infrastructure.ts" />
 define(["require", "exports"], function (require, exports) {
+    "use strict";
     var InfrastructureTestSpec;
     (function (InfrastructureTestSpec) {
         describe('Infrastructure', function () {

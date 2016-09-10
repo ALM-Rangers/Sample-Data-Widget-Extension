@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports", "../scripts/SampleDataContract", "../scripts/TemplateServices", "../scripts/ServiceFactory", "../scripts/ParamUtils"], function (require, exports, SampleDataContracts, TemplateServices, ServiceFactory, ParamUtils) {
+    "use strict";
     var SampleDataController = (function () {
         function SampleDataController() {
             this.serviceFactory = new ServiceFactory.ServiceFactory();
@@ -219,7 +220,7 @@ define(["require", "exports", "../scripts/SampleDataContract", "../scripts/Templ
             return deferred.promise();
         };
         return SampleDataController;
-    })();
+    }());
     exports.SampleDataController = SampleDataController;
     var instance;
     function getInstance() {
@@ -236,7 +237,7 @@ define(["require", "exports", "../scripts/SampleDataContract", "../scripts/Templ
             this.notifyCallback.Notify("");
         };
         return callBack;
-    })();
+    }());
     exports.callBack = callBack;
 });
 //# sourceMappingURL=SampleDataController.js.map

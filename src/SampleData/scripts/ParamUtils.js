@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports", "TFS/WorkItemTracking/RestClient"], function (require, exports, WITRestClient) {
+    "use strict";
     function addSystemParameters(params) {
         params.push({ Field: "@Me", Value: VSS.getWebContext().user.name, SystemParam: true });
         params.push({ Field: "@Today", Value: new Date(Date.now()).toJSON(), SystemParam: true });

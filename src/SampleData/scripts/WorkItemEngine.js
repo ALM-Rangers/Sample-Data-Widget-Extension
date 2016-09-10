@@ -1,4 +1,5 @@
 define(["require", "exports", "../scripts/ParamUtils"], function (require, exports, ParamUtils) {
+    "use strict";
     var WorkItemEninge = (function () {
         function WorkItemEninge(workItemRestClient, context) {
             this.witClient = workItemRestClient;
@@ -190,7 +191,7 @@ define(["require", "exports", "../scripts/ParamUtils"], function (require, expor
             return wiLst;
         };
         return WorkItemEninge;
-    })();
+    }());
     exports.WorkItemEninge = WorkItemEninge;
 });
 //# sourceMappingURL=WorkItemEngine.js.map

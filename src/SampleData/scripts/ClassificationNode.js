@@ -1,4 +1,5 @@
 define(["require", "exports"], function (require, exports) {
+    "use strict";
     var ClassificationNodeService = (function () {
         function ClassificationNodeService() {
         }
@@ -154,7 +155,7 @@ define(["require", "exports"], function (require, exports) {
             return attributes;
         };
         return ClassificationNodeService;
-    })();
+    }());
     exports.ClassificationNodeService = ClassificationNodeService;
 });
 //# sourceMappingURL=ClassificationNode.js.map

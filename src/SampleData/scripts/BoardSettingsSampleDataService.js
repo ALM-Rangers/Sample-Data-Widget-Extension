@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports", "TFS/Work/RestClient", "TFS/Core/RestClient", "../scripts/ParamUtils"], function (require, exports, WorkClient, CoreClient, ParamUtils) {
+    "use strict";
     var BoardSettingsSampleDataService = (function () {
         function BoardSettingsSampleDataService() {
         }
@@ -171,7 +172,7 @@ define(["require", "exports", "TFS/Work/RestClient", "TFS/Core/RestClient", "../
             return defer.promise();
         };
         return BoardSettingsSampleDataService;
-    })();
+    }());
     exports.BoardSettingsSampleDataService = BoardSettingsSampleDataService;
     function CompareStateMappings(c1, c2) {
         return JSON.stringify(c1.stateMappings) === JSON.stringify(c2.stateMappings);

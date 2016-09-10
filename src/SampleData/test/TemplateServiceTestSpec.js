@@ -1,5 +1,6 @@
 ///// <reference path="../sdk/tsd.d.ts" />
 define(["require", "exports", "../scripts/templateservices"], function (require, exports, TemplateService) {
+    "use strict";
     var TemplateServiceTestSpec;
     (function (TemplateServiceTestSpec) {
         describe("TemplateServiceTestSpec", function () {

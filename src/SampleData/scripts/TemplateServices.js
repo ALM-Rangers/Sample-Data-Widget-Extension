@@ -1,4 +1,5 @@
 define(["require", "exports"], function (require, exports) {
+    "use strict";
     var TemplateService = (function () {
         function TemplateService() {
             this.TemplateList = null;
@@ -2827,7 +2828,7 @@ define(["require", "exports"], function (require, exports) {
             return deferred.promise();
         };
         return TemplateService;
-    })();
+    }());
     exports.TemplateService = TemplateService;
 });
 //# sourceMappingURL=TemplateServices.js.map

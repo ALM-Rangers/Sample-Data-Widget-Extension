@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports", "TFS/Work/RestClient", "TFS/Core/RestClient", "TFS/WorkItemTracking/RestClient", "../scripts/ParamUtils"], function (require, exports, WorkClient, CoreClient, WitRestClient, ParamUtils) {
+    "use strict";
     var TeamSampleDataService = (function () {
         function TeamSampleDataService() {
         }
@@ -206,7 +207,7 @@ define(["require", "exports", "TFS/Work/RestClient", "TFS/Core/RestClient", "TFS
             return deferred.promise();
         };
         return TeamSampleDataService;
-    })();
+    }());
     exports.TeamSampleDataService = TeamSampleDataService;
 });
 //# sourceMappingURL=TeamSampleDataService.js.map

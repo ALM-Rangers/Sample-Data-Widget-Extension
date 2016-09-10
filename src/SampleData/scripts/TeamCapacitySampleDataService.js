@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports", "TFS/Work/RestClient", "TFS/Core/RestClient", "../scripts/ParamUtils"], function (require, exports, WorkClient, CoreClient, ParamUtils) {
+    "use strict";
     var TeamCapacitySampleDataService = (function () {
         function TeamCapacitySampleDataService() {
         }
@@ -181,7 +182,7 @@ define(["require", "exports", "TFS/Work/RestClient", "TFS/Core/RestClient", "../
             return deferred.promise();
         };
         return TeamCapacitySampleDataService;
-    })();
+    }());
     exports.TeamCapacitySampleDataService = TeamCapacitySampleDataService;
 });
 //# sourceMappingURL=TeamCapacitySampleDataService.js.map

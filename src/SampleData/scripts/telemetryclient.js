@@ -79,5 +79,5 @@ var TelemetryClient = (function () {
     TelemetryClient.DevLabs_SampleData = "53bd8fe1-1dd8-4b88-847e-20e917d09712";
     TelemetryClient.ExtensionContext = "SampleData";
     return TelemetryClient;
-})();
+}());
 //# sourceMappingURL=telemetryclient.js.map

@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports", "TFS/WorkItemTracking/RestClient", "../scripts/WorkItemSampleDataService", "../scripts/IterationSampleDataService", "../scripts/TeamSampleDataService", "../scripts/TeamCapacitySampleDataService", "../scripts/AreaSampleDataService", "../scripts/BoardSettingsSampleDataService"], function (require, exports, RestClient, WITSampleDataService, IterationDataService, TeamDataService, TeamCapacityDataService, AreaDataService, BoardSettingDataService) {
+    "use strict";
     var ServiceFactory = (function () {
         function ServiceFactory() {
         }
@@ -43,7 +44,7 @@ define(["require", "exports", "TFS/WorkItemTracking/RestClient", "../scripts/Wor
             return null;
         };
         return ServiceFactory;
-    })();
+    }());
     exports.ServiceFactory = ServiceFactory;
 });
 //# sourceMappingURL=ServiceFactory.js.map

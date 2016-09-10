@@ -108,5 +108,5 @@ var Utilities = (function () {
         { "PrimaryColor": "009CCC", "SecondaryColor": "FFD6ECF2", "WorkItemTypeName": "User Story" },
         { "PrimaryColor": "009CCC", "SecondaryColor": "FFD6ECF2", "WorkItemTypeName": "Product Backlog Item" }];
     return Utilities;
-})();
+}());
 //# sourceMappingURL=Infrastructure.js.map

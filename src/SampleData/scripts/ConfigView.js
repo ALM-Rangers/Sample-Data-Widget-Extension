@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports", "../scripts/SampleDataController", "../scripts/TemplateServices"], function (require, exports, Controller, TemplateServices) {
+    "use strict";
     var ConfigView = (function () {
         function ConfigView() {
         }
@@ -64,7 +65,7 @@ define(["require", "exports", "../scripts/SampleDataController", "../scripts/Tem
             this.WidgetContext.notify(eventName, eventArgs);
         };
         return ConfigView;
-    })();
+    }());
     exports.ConfigView = ConfigView;
 });
 //# sourceMappingURL=ConfigView.js.map

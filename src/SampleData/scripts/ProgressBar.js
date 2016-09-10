@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports"], function (require, exports) {
+    "use strict";
     //export interface ISampleDataController {
     //    Populate(template: SampleDataContracts.ISampleDataTemplate, logCallBack: SampleDataContracts.ILogCallback): IPromise<SampleDataContracts.ISampleDataTemplate>;
     //    Remove(template: SampleDataContracts.ISampleDataTemplate, logCallBack: SampleDataContracts.ILogCallback): IPromise<SampleDataContracts.ISampleDataTemplate>;
@@ -64,7 +65,7 @@ define(["require", "exports"], function (require, exports) {
             container.append(elemNotStarted);
         };
         return ProgressBar;
-    })();
+    }());
     exports.ProgressBar = ProgressBar;
     var TaskState;
     (function (TaskState) {
@@ -102,7 +103,7 @@ define(["require", "exports"], function (require, exports) {
             this.title = t;
         };
         return ProgressTask;
-    })();
+    }());
     exports.ProgressTask = ProgressTask;
 });
 //# sourceMappingURL=ProgressBar.js.map

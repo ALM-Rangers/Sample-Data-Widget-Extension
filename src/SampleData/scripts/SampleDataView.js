@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports", "VSS/Controls", "VSS/Controls/Combos", "../scripts/TemplateServices", "../scripts/ProgressBar"], function (require, exports, Controls, Combos, TemplateServices, ProgressBar) {
+    "use strict";
     var SampleDataView = (function () {
         function SampleDataView() {
         }
@@ -267,7 +268,7 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/Combos", "../scripts
             }
         };
         return SampleDataView;
-    })();
+    }());
     exports.SampleDataView = SampleDataView;
 });
 //# sourceMappingURL=SampleDataView.js.map

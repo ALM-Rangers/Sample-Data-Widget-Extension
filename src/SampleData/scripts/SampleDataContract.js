@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports"], function (require, exports) {
+    "use strict";
     (function (executeAction) {
         executeAction[executeAction["Populate"] = 0] = "Populate";
         executeAction[executeAction["Remove"] = 1] = "Remove";

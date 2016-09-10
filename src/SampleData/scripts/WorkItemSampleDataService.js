@@ -10,6 +10,7 @@
 // </summary>
 //---------------------------------------------------------------------
 define(["require", "exports", "TFS/WorkItemTracking/RestClient", "../scripts/SampleDataContract", "../scripts/WorkItemEngine"], function (require, exports, WITRestClient, SampleDataContracts, WITemplateEngine) {
+    "use strict";
     var WorkItemSampleDataService = (function () {
         function WorkItemSampleDataService() {
         }
@@ -51,7 +52,7 @@ define(["require", "exports", "TFS/WorkItemTracking/RestClient", "../scripts/Sam
             return deferred.promise();
         };
         return WorkItemSampleDataService;
-    })();
+    }());
     exports.WorkItemSampleDataService = WorkItemSampleDataService;
 });
 //# sourceMappingURL=WorkItemSampleDataService.js.map
