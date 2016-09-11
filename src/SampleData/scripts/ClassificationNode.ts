@@ -15,8 +15,6 @@ import Contracts = require("TFS/WorkItemTracking/Contracts");
 
 import ParamUtils = require("../scripts/ParamUtils");
 
-//import Utilities = require("../scripts/Infrastructure");
-
 
 export interface ClassificationNodesTemplate {
     nodes: ClassificationNodeTemplate[]

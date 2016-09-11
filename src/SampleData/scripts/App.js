@@ -11,4 +11,4 @@
 //---------------------------------------------------------------------
 /// <reference path="../sdk/vss.d.ts" />
 /// <reference path="../sdk/tfs.d.ts" />
-//# sourceMappingURL=App.js.map
+//# sourceMappingURL=app.js.map

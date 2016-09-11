@@ -11,7 +11,7 @@
 //---------------------------------------------------------------------
 
 
-/// <reference path="TelemetryClient.ts" />
+/// <reference path="telemetryclient.ts" />
 
 import Controls = require("VSS/Controls");
 import Combos = require("VSS/Controls/Combos");
