@@ -73,7 +73,8 @@
       "id": "sample-data-widget",
       "type": "ms.vss-dashboards-web.widget",
       "targets": [
-        "ms.vss-dashboards-web.widget-catalog" 
+        "ms.vss-dashboards-web.widget-catalog",
+        ".sample-data-widget.configuration"
       ],
       "properties": {
         "name": "Sample Data",
