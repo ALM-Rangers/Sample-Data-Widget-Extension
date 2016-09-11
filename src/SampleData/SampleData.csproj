@@ -131,7 +131,7 @@
     <TypeScriptCompile Include="scripts\SampleDataController.ts" />
     <TypeScriptCompile Include="scripts\SampleDataView.ts" />
     <TypeScriptCompile Include="scripts\ServiceFactory.ts" />
-    <TypeScriptCompile Include="scripts\TelemetryClient.ts" />
+    <TypeScriptCompile Include="scripts\telemetryclient.ts" />
     <TypeScriptCompile Include="scripts\TemplateServices.ts" />
     <TypeScriptCompile Include="scripts\WorkItemEngine.ts" />
     <TypeScriptCompile Include="scripts\WorkItemSampleDataService.ts" />
