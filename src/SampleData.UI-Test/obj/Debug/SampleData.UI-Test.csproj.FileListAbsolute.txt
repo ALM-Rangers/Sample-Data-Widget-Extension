@@ -1,0 +1,5 @@
+C:\Users\ShieldAdmin\Source\Repos\Sample-Data-Widget-Extension\src\SampleData.UI-Test\bin\Debug\SampleData.UI-Test.dll
+C:\Users\ShieldAdmin\Source\Repos\Sample-Data-Widget-Extension\src\SampleData.UI-Test\bin\Debug\SampleData.UI-Test.pdb
+C:\Users\ShieldAdmin\Source\Repos\Sample-Data-Widget-Extension\src\SampleData.UI-Test\obj\Debug\SampleData.UI-Test.csprojResolveAssemblyReference.cache
+C:\Users\ShieldAdmin\Source\Repos\Sample-Data-Widget-Extension\src\SampleData.UI-Test\obj\Debug\SampleData.UI-Test.dll
+C:\Users\ShieldAdmin\Source\Repos\Sample-Data-Widget-Extension\src\SampleData.UI-Test\obj\Debug\SampleData.UI-Test.pdb

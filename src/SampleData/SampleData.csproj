@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort>44300</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
@@ -105,7 +105,7 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="GettingStartedWithAgile.md" />
-	<Content Include="SAFe.md" />
+    <Content Include="SAFe.md" />
     <Content Include="DefaultTemplates\SAFe.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
@@ -116,7 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="sdk\ai.0.22.9-build00167.d.ts" />
-    <TypeScriptCompile Include="scripts\app.ts" />
+    <TypeScriptCompile Include="scripts\App.ts" />
     <TypeScriptCompile Include="scripts\AreaSampleDataService.ts" />
     <TypeScriptCompile Include="scripts\BoardSettingsSampleDataService.ts" />
     <TypeScriptCompile Include="scripts\ClassificationNode.ts" />

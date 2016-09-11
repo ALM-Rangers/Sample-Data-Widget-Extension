@@ -1,0 +1,146 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+     color: #424245;
+    font-size: 14px;
+}
+
+
+/*media screen*/
+ .title-container {
+    margin-bottom: 27px;
+    color: #424245;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    margin-top: -5px;
+}
+
+.title-container{
+    margin-left:0px;
+}
+.widget-container{
+    margin:14px 10px;
+}
+.SubTitle
+{
+ color: #424245;
+    font-size: 14px;
+    margin-bottom:6px;
+}
+
+.SampleActionButton{
+    
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    color: #333333;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 2px 12px 2px 12px;
+    margin-top: 8px;
+    position:fixed;
+
+    right:10px;
+    bottom:10px;
+     
+
+}
+#TemplateDropDown .combo {
+    height:30px;
+}
+
+.NavLink{
+    position:fixed;
+    left:10px;
+    bottom: 10px;
+    font-size:small;
+}
+
+.TemplateImage{
+    float:left;
+    margin: 0px 6px 0px 0px;
+    max-width:92px;
+}
+
+#TemplateIcon {
+    max-width:92px;
+}
+#TemplateNavigator{
+   
+    font-size:x-small;
+    text-align:center;
+    margin-top:-2px;
+}
+
+#TemplateDropDown {
+    font-size:12px;
+    height: 30px
+}
+#CreateFromTemplate{
+    
+    margin-left:0px;
+}
+
+#ProgressBar {
+    width:100%;
+    height:15px;
+    background-color:none;
+    border: 1px solid #e6e6e6;
+    margin: 10px 0 10px 0;
+}
+
+.ProgressTask{
+    
+    height:100%;
+    
+    display:inline-block;
+}
+
+#ProgressMessage {
+    text-overflow: ellipsis; 
+     
+     white-space: nowrap ;
+     overflow:hidden;
+     width:100%;
+         
+}
+#TemplateName {
+}
+
+#TemplateMessage{
+
+}
+
+#TemplateError {
+    margin-left:10px;
+    color:red;
+}
+
+.TaskStatusNotStarted {
+ background-color:darkgrey;
+ height:100%;
+}
+
+.TaskStatusDone {
+    background-color: #a5b6ed;
+    height:100%;
+}
+
+.TaskStatusInProgress {
+ 
+ height:100%;
+ background-color:darkgrey;
+}
+
+.TaskStatusFailed {
+ background-color:red;
+ height:100%;
+}
+
+#txtTemplateData{
+    position:absolute;
+    margin-bottom:6px;
+    margin-top:6px;
+}
