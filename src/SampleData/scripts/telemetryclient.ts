@@ -14,7 +14,7 @@
 class TelemetryClient {
 
     private static TestingKey = "32a074c8-36a4-442b-9432-5704ec064444";
-    private static DevLabs_SampleData = "53bd8fe1-1dd8-4b88-847e-20e917d09712";
+    private static DevLabs_SampleData = "__INSTRUMENTATIONKEY__";
 
 
     private static telemetryClient: TelemetryClient;
