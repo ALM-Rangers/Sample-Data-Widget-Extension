@@ -6,9 +6,13 @@
 
 Ever needed to have sample data to try things out on? Want to explore what Visual Studio Team Services can do? This extension lets you create and remove sample data in your project.
 
-![](src/SampleData/img/SampleDataWidget.png)
+### Installation
+* Install the extension in your VSTS account
+* Edit a project dashboard and add the Sample Data widget
+* Save the dashboard
+* Use the widget controls to populate the project with sample data
 
-After you have installed the extension, you can add the sample Data Widget to your dashboards and start to create and explore VSTS with the provided sample data.
+![](src/SampleData/img/SampleDataWidget.png)
  
 ## Sample Data Packages
 The extension uses Sample data packages which you can create and remove to and from any project. 
