@@ -36,6 +36,10 @@
       "path": "mp_terms.md"
     }
   },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/ALM-Rangers/Sample-Data-Widget-Extension"
+  },
    
   "files": [
     {
