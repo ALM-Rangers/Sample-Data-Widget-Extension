@@ -69,86 +69,90 @@ export class BoardSettingsSampleDataService implements DataContracts.ISampleData
         var teamContext: any = {};
         teamContext.projectId = VSS.getWebContext().project.id;
         teamContext.team = tmplData.TeamName;
-        
+
 
         var oldCardSettings = this.WorkClient.getBoardCardSettings(teamContext, tmplData.BoardName);
-        var oldCardRules = this.WorkClient.getBoardCardRuleSettings(teamContext, tmplData.BoardName);
-        var oldColumns = this.WorkClient.getBoardColumns(teamContext, tmplData.BoardName);
+        oldCardSettings.then(value => {
 
-        var oldSettingPromises: IPromise<any>[] = [oldCardSettings, oldCardRules, oldColumns];
-     
+            var oldCardRules = this.WorkClient.getBoardCardRuleSettings(teamContext, tmplData.BoardName);
+            var oldColumns = this.WorkClient.getBoardColumns(teamContext, tmplData.BoardName);
 
-        Q.all(oldSettingPromises).then(
-            oldSettings=> {
-                var cardSettings = srv.UpdateCardSettings(tmplData.BoardName, tmplData.TeamName, tmplData.CardSettings);
-                var cardRulesSettings = srv.UpdateCardRulesSettings(tmplData.BoardName, tmplData.TeamName, tmplData.CardRules);
+            var oldSettingPromises: IPromise<any>[] = [oldCardRules, oldColumns];
 
-                var promises: IPromise<any>[] = [ cardSettings, cardRulesSettings];
 
-                if (tmplData.Columns != null) {
+            Q.all(oldSettingPromises).then(
+                oldSettings => {
+                    var cardSettings = srv.UpdateCardSettings(tmplData.BoardName, tmplData.TeamName, tmplData.CardSettings);
+                    var cardRulesSettings = srv.UpdateCardRulesSettings(tmplData.BoardName, tmplData.TeamName, tmplData.CardRules);
 
-                    // replace parameters for states 
-                    tmplData.Columns.forEach(col => {
-                        for (var prop in col.stateMappings) {
-                            // skip loop if the property is from prototype
-                            if (!col.stateMappings.hasOwnProperty(prop))
-                                continue;
-                            col.stateMappings[prop] = ParamUtils.ReplaceParams(col.stateMappings[prop], parameterList);
+                    var promises: IPromise<any>[] = [cardSettings, cardRulesSettings];
 
-                        }
-                    });
+                    if (tmplData.Columns != null) {
 
-                    
-                    oldSettings[2].forEach(c => {
-                        // Try to find the same state and index ...                    
-                        var nc = tmplData.Columns.filter(i => {
-                            return CompareStateMappings(i,c);
-                        });
-                        //TODO- Maybe need to compensate for multiple columns within the same statemapping
-                        if (nc.length > 0) {
-                            var bFound: boolean = false;
+                        // replace parameters for states 
+                        tmplData.Columns.forEach(col => {
+                            for (var prop in col.stateMappings) {
+                                // skip loop if the property is from prototype
+                                if (!col.stateMappings.hasOwnProperty(prop))
+                                    continue;
+                                col.stateMappings[prop] = ParamUtils.ReplaceParams(col.stateMappings[prop], parameterList);
 
-                            nc.forEach(c2 => {
-                                if (c2.name === c.name) {
-                                    bFound = true;
-                                    c2.id = c.id;
-                                }
-                            });
-                            if (!bFound) {
-                                nc[0].id = c.id;
                             }
-                        }
-                    });
-                    
-                    tmplData.Columns[tmplData.Columns.length - 1].id = oldSettings[2][oldSettings[2].length-1].id;
-                    promises.push(srv.UpdateColumns(tmplData.BoardName, tmplData.TeamName, tmplData.Columns));
-                }
+                        });
 
-                Q.all(promises).then(
-                    settings=> {
-                        var installed: BoardSettingsTemplate = {
-                            TeamName: tmplData.TeamName,
-                            BoardName: tmplData.BoardName,
-                            CardRules: oldSettings[1],
-                            CardSettings: oldSettings[0],
-                            Columns: oldSettings[2]
-                        };
 
-                        template.InstalledData = installed;
+                        oldSettings[2].forEach(c => {
+                            // Try to find the same state and index ...                    
+                            var nc = tmplData.Columns.filter(i => {
+                                return CompareStateMappings(i, c);
+                            });
+                            //TODO- Maybe need to compensate for multiple columns within the same statemapping
+                            if (nc.length > 0) {
+                                var bFound: boolean = false;
 
-                        defer.resolve(template);
-                    },
-                    reject => {
-                        TelemetryClient.getClient().trackException(reject, "BoardSettingsSampleDataService.PopulateData");
-                        console.log(reject);
-                        defer.reject(reject);
-                    });
-            },
-            reject => {
-                TelemetryClient.getClient().trackException(reject, "BoardSettingsSampleDataService.PopulateData");
-                console.log(reject);
-                defer.reject(reject);
-            });
+                                nc.forEach(c2 => {
+                                    if (c2.name === c.name) {
+                                        bFound = true;
+                                        c2.id = c.id;
+                                    }
+                                });
+                                if (!bFound) {
+                                    nc[0].id = c.id;
+                                }
+                            }
+                        });
+
+                        tmplData.Columns[tmplData.Columns.length - 1].id = oldSettings[2][oldSettings[2].length - 1].id;
+                        promises.push(srv.UpdateColumns(tmplData.BoardName, tmplData.TeamName, tmplData.Columns));
+                    }
+
+                    Q.all(promises).then(
+                        settings => {
+                            var installed: BoardSettingsTemplate = {
+                                TeamName: tmplData.TeamName,
+                                BoardName: tmplData.BoardName,
+                                CardRules: oldSettings[1],
+                                CardSettings: oldSettings[0],
+                                Columns: oldSettings[2]
+                            };
+
+                            template.InstalledData = installed;
+
+                            defer.resolve(template);
+                        },
+                        reject => {
+                            TelemetryClient.getClient().trackException(reject, "BoardSettingsSampleDataService.PopulateData");
+                            console.log(reject);
+                            defer.reject(reject);
+                        });
+                },
+                reject => {
+                    TelemetryClient.getClient().trackException(reject, "BoardSettingsSampleDataService.PopulateData");
+                    console.log(reject);
+                    defer.reject(reject);
+                });
+            }
+        );
 
         return defer.promise();
 
