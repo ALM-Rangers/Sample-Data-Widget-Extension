@@ -11,10 +11,10 @@
   "public": false,
 
   "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services.Cloud"
-        }
-    ],
+    {
+      "id": "Microsoft.VisualStudio.Services.Cloud"
+    }
+  ],
 
   "tags": [
     "Sample",
@@ -36,7 +36,7 @@
       "path": "mp_terms.md"
     }
   },
-   
+
   "files": [
     {
       "path": "index.html",
@@ -64,11 +64,26 @@
     }
 
   ],
+  "links": {
+    "repository": {
+      "uri": "https://github.com/ALM-Rangers/ample-Data-Widget-Extension"
+    },
+    "issues": {
+      "uri": "https://github.com/ALM-Rangers/ample-Data-Widget-Extension/issues"
+    },
+    "support": {
+      "uri": "http://aka.ms/vsarcontact"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/ALM-Rangers/Sample-Data-Widget-Extension"
+  },
   "icons": {
     "default": "img/logo.png"
-  }, 
+  },
 
-   "contributions": [
+  "contributions": [
     {
       "id": "sample-data-widget",
       "type": "ms.vss-dashboards-web.widget",
@@ -107,5 +122,5 @@
   ]
 
 
-  
+
 }
