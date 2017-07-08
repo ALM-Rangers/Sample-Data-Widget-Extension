@@ -12,7 +12,7 @@
 
   "targets": [
     {
-      "id": "Microsoft.VisualStudio.Services.Cloud"
+      "id": "Microsoft.VisualStudio.Services"
     }
   ],
 
