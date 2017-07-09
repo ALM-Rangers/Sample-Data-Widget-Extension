@@ -71,8 +71,8 @@ export class BoardSettingsSampleDataService implements DataContracts.ISampleData
         teamContext.team = tmplData.TeamName;
 
 
-        var oldCardSettings = this.WorkClient.getBoardCardSettings(teamContext, tmplData.BoardName);
-        oldCardSettings.then(value => {
+        var oldCardSettingsPromise = this.WorkClient.getBoardCardSettings(teamContext, tmplData.BoardName);
+        oldCardSettingsPromise.then(oldCardSettings => {
 
             var oldCardRules = this.WorkClient.getBoardCardRuleSettings(teamContext, tmplData.BoardName);
             var oldColumns = this.WorkClient.getBoardColumns(teamContext, tmplData.BoardName);
@@ -100,8 +100,8 @@ export class BoardSettingsSampleDataService implements DataContracts.ISampleData
                             }
                         });
 
-
-                        oldSettings[2].forEach(c => {
+                        //Loop columns
+                        oldSettings[1].forEach(c => {
                             // Try to find the same state and index ...                    
                             var nc = tmplData.Columns.filter(i => {
                                 return CompareStateMappings(i, c);
@@ -131,9 +131,9 @@ export class BoardSettingsSampleDataService implements DataContracts.ISampleData
                             var installed: BoardSettingsTemplate = {
                                 TeamName: tmplData.TeamName,
                                 BoardName: tmplData.BoardName,
-                                CardRules: oldSettings[1],
-                                CardSettings: oldSettings[0],
-                                Columns: oldSettings[2]
+                                CardRules: oldSettings[0],
+                                CardSettings: oldCardSettings,
+                                Columns: oldSettings[1]
                             };
 
                             template.InstalledData = installed;
