@@ -20,6 +20,11 @@ export interface ClassificationNodesTemplate {
     nodes: ClassificationNodeTemplate[]
 }
 
+export interface ICreateUpdateNode {
+    created: boolean,
+    node: Contracts.WorkItemClassificationNode 
+}
+
 export interface ClassificationNodeTemplate {
     Path: string;
     Name: string;
@@ -40,7 +45,7 @@ export abstract class ClassificationNodeService {
 
         
         this.WorkItemClient.getClassificationNode(VSS.getWebContext().project.name, nodeType, "", 7).then(rootNode=> {
-            var promises = new Array<IPromise<Contracts.WorkItemClassificationNode>>();
+            var promises = new Array<IPromise<ICreateUpdateNode>>();
 
             template.nodes.forEach(node => {
         
@@ -49,7 +54,13 @@ export abstract class ClassificationNodeService {
             });
 
             Q.all(promises).then(nodes => {
-                defer.resolve(nodes)
+                var addedNodes: Contracts.WorkItemClassificationNode[] = [];
+                nodes.forEach(n => {
+                    if (n.created) {
+                        addedNodes.push(n.node);
+                    }
+                });
+                defer.resolve(addedNodes)
             }, reject=> {
                 TelemetryClient.getClient().trackException(reject, "ClassificationNodeService.CreateNodes");
                 defer.reject(reject);
@@ -60,9 +71,10 @@ export abstract class ClassificationNodeService {
         });
         return defer.promise();
     }
+    
 
-    private CreateNodeStruct(nodeTemplate: ClassificationNodeTemplate, nodeType: Contracts.TreeStructureGroup, parameterList: ParamUtils.ITemplateParameter[], existingNodes: Contracts.WorkItemClassificationNode []): IPromise<Contracts.WorkItemClassificationNode> {
-        var deferred = $.Deferred<Contracts.WorkItemClassificationNode>();
+    private CreateNodeStruct(nodeTemplate: ClassificationNodeTemplate, nodeType: Contracts.TreeStructureGroup, parameterList: ParamUtils.ITemplateParameter[], existingNodes: Contracts.WorkItemClassificationNode []): IPromise<ICreateUpdateNode> {
+        var deferred = $.Deferred<ICreateUpdateNode>();
 
         console.log("Creating Node " + nodeTemplate.Name);
 
@@ -72,27 +84,27 @@ export abstract class ClassificationNodeService {
             nodeType,
             Utilities.CleanTrailingSlash(nodeTemplate.Path),
             parameterList,
-            existingNodes).then(node => {
+            existingNodes).then(cuNode => {
 
             console.log("Successfully created node");
-            console.log(node);
+            console.log(cuNode);
 
             if (nodeTemplate.Children != null) {
                 console.log("Creating child nodes to" + nodeTemplate.Name);
-                node.children = [];
-                var promises: IPromise<Contracts.WorkItemClassificationNode>[] = [];
+                cuNode.node.children = [];
+                var promises: IPromise<ICreateUpdateNode>[] = [];
                 nodeTemplate.Children.forEach(child => {
                     promises.push(this.CreateNodeStruct( child, nodeType, parameterList, existingNodes));
                 });
                 Q.all(promises).then(nodes => {
                     nodes.forEach(n=> {
-                        node.children.push(n);
+                        cuNode.node.children.push(n.node);
                     });
-                    deferred.resolve(node);
+                    deferred.resolve(cuNode);
                 });
             }
             else {
-                deferred.resolve(node);
+                deferred.resolve(cuNode);
             }
         }, rejectReason => {
             TelemetryClient.getClient().trackException(rejectReason, "ClassificationNodeService.CreateNodeStruct");
@@ -102,8 +114,8 @@ export abstract class ClassificationNodeService {
         return deferred.promise();
     }
 
-    public CreateOrUpdateNode(node, projectName: string, nodeType, path: string, parameterList: ParamUtils.ITemplateParameter[], existingNodes: Contracts.WorkItemClassificationNode[]): IPromise<Contracts.WorkItemClassificationNode> {
-        var defer = $.Deferred<Contracts.WorkItemClassificationNode>();
+    public CreateOrUpdateNode(node, projectName: string, nodeType, path: string, parameterList: ParamUtils.ITemplateParameter[], existingNodes: Contracts.WorkItemClassificationNode[]): IPromise<ICreateUpdateNode> {
+        var defer = $.Deferred<ICreateUpdateNode>();
 
 
         var nodePath: string = VSS.getWebContext().project.name + "\\";
@@ -140,7 +152,7 @@ export abstract class ClassificationNodeService {
                         parentNode.children = [node];
                     }
                 }
-                defer.resolve(node);
+                defer.resolve({ created: existingNode == null, node: node });
                 console.log("Successfully created node");
                 console.log(node);
             },
