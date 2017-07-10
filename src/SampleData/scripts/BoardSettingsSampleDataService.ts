@@ -82,11 +82,13 @@ export class BoardSettingsSampleDataService implements DataContracts.ISampleData
 
             Q.all(oldSettingPromises).then(
                 oldSettings => {
+                    var oldColumns = oldSettings[1];
                     var cardSettings = srv.UpdateCardSettings(tmplData.BoardName, tmplData.TeamName, tmplData.CardSettings);
                     var cardRulesSettings = srv.UpdateCardRulesSettings(tmplData.BoardName, tmplData.TeamName, tmplData.CardRules);
 
                     var promises: IPromise<any>[] = [cardSettings, cardRulesSettings];
 
+                    
                     if (tmplData.Columns != null) {
 
                         // replace parameters for states 
@@ -101,7 +103,7 @@ export class BoardSettingsSampleDataService implements DataContracts.ISampleData
                         });
 
                         //Loop columns
-                        oldSettings[1].forEach(c => {
+                        oldColumns.forEach(c => {
                             // Try to find the same state and index ...                    
                             var nc = tmplData.Columns.filter(i => {
                                 return CompareStateMappings(i, c);
@@ -122,7 +124,7 @@ export class BoardSettingsSampleDataService implements DataContracts.ISampleData
                             }
                         });
 
-                        tmplData.Columns[tmplData.Columns.length - 1].id = oldSettings[2][oldSettings[2].length - 1].id;
+                        tmplData.Columns[tmplData.Columns.length - 1].id = oldColumns[oldColumns.length - 1].id;
                         promises.push(srv.UpdateColumns(tmplData.BoardName, tmplData.TeamName, tmplData.Columns));
                     }
 
@@ -133,7 +135,7 @@ export class BoardSettingsSampleDataService implements DataContracts.ISampleData
                                 BoardName: tmplData.BoardName,
                                 CardRules: oldSettings[0],
                                 CardSettings: oldCardSettings,
-                                Columns: oldSettings[1]
+                                Columns: oldColumns
                             };
 
                             template.InstalledData = installed;
