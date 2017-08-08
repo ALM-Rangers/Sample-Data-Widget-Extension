@@ -18,12 +18,12 @@ Ever needed to have sample data to try things out on? Want to explore what Visua
 The extension uses Sample data packages which you can create and remove to and from any project. 
 Currently we have two packages out of the box: 
 
-###Getting started with Agile & VSTS
+### Getting started with Agile & VSTS
 Explore how you can create and work with work items and customize the agile boards.
 
 ![](src/SampleData/img//WIs.png)
 
-###SAFe with VSTS
+### SAFe with VSTS
 Learn how to use the Scaled Agile Framework with VSTS. Sample Data generates the sample data discussed in the [Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs](https://www.visualstudio.com/docs/work/scale/scaled-agile-framework) article.
 
 ![](src/SampleData/img//safe-concepts-poster.png)
@@ -36,7 +36,7 @@ You can create and add your own custom Sample Data packages through the configur
 
 We thank the following contributor(s) for this extension: Mattias Sköld, Niel Zeeman, Hassan Fadili and Igor Scheglovitov.
 
-##Contribute
+## Contribute
 Contributions to Sample Data are welcome. Here is how you can contribute:  
 
 - Submit bugs and help us verify fixes  
