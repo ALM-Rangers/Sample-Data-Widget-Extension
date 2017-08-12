@@ -1,6 +1,6 @@
 # Sample-Data-Widget-Extension
 
-![](https://almrangers.visualstudio.com/DefaultCollection/_apis/public/build/definitions/7f3cfb9a-d1cb-4e66-9d36-1af87b906fe9/90/badge)
+![](https://almrangers.visualstudio.com/_apis/public/build/definitions/7f3cfb9a-d1cb-4e66-9d36-1af87b906fe9/152/badge)
 
 ## Create and remove sample data 
 
