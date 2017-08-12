@@ -37,6 +37,11 @@
     }
   },
 
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/ALM-Rangers/Sample-Data-Widget-Extension"
+  },
+
   "files": [
     {
       "path": "index.html",
