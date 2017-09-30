@@ -8,4 +8,4 @@ Changes proposed in this pull request:
 - 
 - 
 
-@ALM-Rangers/sampledata
+@ALM-Rangers/Sample-Data-Widget-Extension
