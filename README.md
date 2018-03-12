@@ -49,4 +49,4 @@ This project collects usage data and sends it to Microsoft to help Microsoft imp
 
 This telemetry is used for A|B testing and troubleshooting. 
 
-To turn off telemetry you need to fork this repo, publish, and use your own version of the project without replacing the __InstrumentationKey__ configuration key.
+To turn off telemetry you need to fork this repo, publish, and use your own version of the project without replacing the \_\_InstrumentationKey\_\_ configuration key.
