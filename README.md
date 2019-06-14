@@ -2,6 +2,8 @@
 
 ![](https://almrangers.visualstudio.com/_apis/public/build/definitions/7f3cfb9a-d1cb-4e66-9d36-1af87b906fe9/152/badge)
 
+> **NOTICE** - We have deprecated this extension. For now it is still avaialble on the [Visual Studio Marketplace](https://marketplace.visualstudio.com). The extension will continue to serve as an open source solution and sample extension on GitHub.
+
 ## Create and remove sample data 
 
 Ever needed to have sample data to try things out on? Want to explore what Visual Studio Team Services can do? This extension lets you create and remove sample data in your project.
